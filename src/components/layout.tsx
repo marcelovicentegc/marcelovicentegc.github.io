@@ -8,9 +8,25 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
-import "./layout.css"
+import Octicon, { Heart } from "@primer/octicons-react"
+import styled from "styled-components"
+
+const AppWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 1140px;
+`
+
+const Footer = styled.footer`
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0px;
+  padding-bottom: 20px;
+`
 
 interface Props {
   children: React.ReactNode
@@ -28,24 +44,17 @@ const Layout = ({ children }: Props) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
+    <AppWrapper>
+      <Header siteTitleAnimation={data.site.siteMetadata.title} />
+      <main>{children}</main>
+      <Footer>
+        <span>
+          Made with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
+          <Octicon icon={Heart} size="small" ariaLabel="Love" />
+        </span>
+      </Footer>
+    </AppWrapper>
   )
 }
 

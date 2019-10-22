@@ -1,21 +1,32 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import { ThemeProvider, createGlobalStyle } from "styled-components"
+
+const theme = {
+  anchor: "#0275d8",
+  background: "#fff",
+  text: "#292b2c",
+}
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+    font-family: "Roboto", monospace;
+    margin: 0;
+  }
+`
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  <>
+    <GlobalStyle />
+    <ThemeProvider theme={theme}>
+      <Layout>
+        <SEO title="marcelovicentegc.github.io" />
+        <p>Hi, I'm Marcelo Cardoso.</p>
+      </Layout>
+    </ThemeProvider>
+  </>
 )
 
 export default IndexPage
