@@ -9,13 +9,7 @@ const theme = {
   text: "#292b2c",
 }
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
-    font-family: "Roboto", monospace;
-    margin: 0;
-  }
-`
+const GlobalStyle = createGlobalStyle``
 
 const IndexPage = () => (
   <>
