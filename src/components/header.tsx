@@ -22,6 +22,7 @@ const ExternalLinks = styled.div`
 
 const HeaderTag = styled.header`
   width: 100%;
+  height: 52px;
 `
 
 interface Props {

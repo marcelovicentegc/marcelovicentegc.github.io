@@ -18,6 +18,16 @@ const AppWrapper = styled.div`
   align-items: center;
   margin: auto;
   max-width: 1140px;
+  height: 100vh;
+`
+
+const Main = styled.main`
+  width: 100%;
+  height: calc(100vh - 113px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 const Footer = styled.footer`
@@ -25,9 +35,19 @@ const Footer = styled.footer`
   flex-direction: row;
   position: absolute;
   bottom: 0px;
-  padding-bottom: 20px;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `
 
+const FadeBottom = styled.div`
+  position: relative;
+  top: -21px;
+  width: 100%;
+  height: 27px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+`
 interface Props {
   children: React.ReactNode
 }
@@ -46,7 +66,8 @@ const Layout = ({ children }: Props) => {
   return (
     <AppWrapper>
       <Header siteTitleAnimation={data.site.siteMetadata.title} />
-      <main>{children}</main>
+      <Main>{children}</Main>
+      <FadeBottom />
       <Footer>
         <span>
           Made with

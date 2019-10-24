@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { ThemeProvider, createGlobalStyle } from "styled-components"
+import Projects from "../components/projects"
 
 const theme = {
   anchor: "#0275d8",
@@ -18,6 +19,7 @@ const IndexPage = () => (
       <Layout>
         <SEO title="marcelovicentegc.github.io" />
         <p>Hi, I'm Marcelo Cardoso.</p>
+        <Projects />
       </Layout>
     </ThemeProvider>
   </>
