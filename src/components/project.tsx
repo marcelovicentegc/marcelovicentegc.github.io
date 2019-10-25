@@ -19,7 +19,9 @@ const Title = styled.h3``
 
 const About = styled.div``
 
-const Paragraph = styled.p``
+const Paragraph = styled.p`
+  text-align: center;
+`
 
 const DemoWrapper = styled.div``
 

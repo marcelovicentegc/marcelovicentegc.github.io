@@ -5,7 +5,6 @@ import Project from "./project"
 const ProjectsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0px 8px;
   width: 100%;
   height: 100%;
   justify-content: flex-start;

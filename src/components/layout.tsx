@@ -33,17 +33,28 @@ const Main = styled.main`
 const Footer = styled.footer`
   display: flex;
   flex-direction: row;
-  position: absolute;
+  background-color: #fff;
+  position: fixed;
+  height: 61px;
   bottom: 0px;
-  padding: 20px 0;
   width: 100%;
   display: flex;
   justify-content: center;
 `
 
+const Span = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    padding-left: 4px;
+  }
+`
+
 const FadeBottom = styled.div`
-  position: relative;
-  top: -21px;
+  position: fixed;
+  bottom: 61px;
   width: 100%;
   height: 27px;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
@@ -69,11 +80,9 @@ const Layout = ({ children }: Props) => {
       <Main>{children}</Main>
       <FadeBottom />
       <Footer>
-        <span>
-          Made with
-          {` `}
-          <Octicon icon={Heart} size="small" ariaLabel="Love" />
-        </span>
+        <Span>
+          Made with <Octicon icon={Heart} size="small" ariaLabel="Love" />
+        </Span>
       </Footer>
     </AppWrapper>
   )
