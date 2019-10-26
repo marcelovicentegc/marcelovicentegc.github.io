@@ -1,8 +1,10 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
-    title: ``,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `marcelovicentegc.github.io`,
+    description: `Marcelo Cardoso's Github page`,
+    author: `Marcelo Cardoso (marcelovicentegc)`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -32,5 +34,16 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "GitHub",
+        fieldName: "github",
+        url: "https://api.github.com/graphql",
+        headers: {
+          Authorization: `Bearer ${process.env.GH_TOKEN}`,
+        },
+      },
+    },
   ],
 }

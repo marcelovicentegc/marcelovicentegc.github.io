@@ -7,7 +7,6 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Octicon, { Heart } from "@primer/octicons-react"
 import styled from "styled-components"
@@ -64,19 +63,9 @@ interface Props {
 }
 
 const Layout = ({ children }: Props) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <AppWrapper>
-      <Header siteTitleAnimation={data.site.siteMetadata.title} />
+      <Header />
       <Main>{children}</Main>
       <FadeBottom />
       <Footer>

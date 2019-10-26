@@ -17,7 +17,7 @@ const IndexPage = () => (
     <GlobalStyle />
     <ThemeProvider theme={theme}>
       <Layout>
-        <SEO title="marcelovicentegc.github.io" />
+        <SEO title="Home" />
         <p>Hi, I'm Marcelo Cardoso.</p>
         <Projects />
       </Layout>

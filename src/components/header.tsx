@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 import Octicon, { MarkGithub } from "@primer/octicons-react"
 import styled from "styled-components"
@@ -25,25 +24,14 @@ const HeaderTag = styled.header`
   height: 52px;
 `
 
-interface Props {
-  siteTitleAnimation: React.ReactNode
-}
-
-const Header = ({ siteTitleAnimation }: Props) => (
+const Header = () => (
   <HeaderTag>
     <ExternalLinks>
       <a href="https://github.com/marcelovicentegc" target="_blank">
         <Octicon icon={MarkGithub} size="medium" ariaLabel="Github" />
       </a>
     </ExternalLinks>
-    <h1>
-      <Link to="/">{siteTitleAnimation}</Link>
-    </h1>
   </HeaderTag>
 )
-
-Header.defaultProps = {
-  siteTitleAnimation: ``,
-}
 
 export default Header
