@@ -1,57 +1,75 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "marcelo.page",
+  "description": "Source files of my personal site",
+  "version": "1.0.0",
+  "author": "Marcelo Cardoso",
   "dependencies": {
-    "@primer/octicons-react": "^9.2.0",
-    "@types/react-helmet": "^5.0.12",
-    "@types/styled-components": "^4.1.19",
-    "babel-plugin-styled-components": "^1.10.6",
-    "dotenv": "^8.2.0",
-    "gatsby": "^2.16.1",
-    "gatsby-image": "^2.2.29",
-    "gatsby-plugin-manifest": "^2.2.23",
-    "gatsby-plugin-offline": "^3.0.16",
-    "gatsby-plugin-react-helmet": "^3.1.13",
-    "gatsby-plugin-sharp": "^2.2.31",
-    "gatsby-plugin-styled-components": "^3.1.11",
-    "gatsby-plugin-typescript": "^2.1.15",
-    "gatsby-source-filesystem": "^2.1.33",
+    "@rebass/components": "^4.0.0-1",
+    "gatsby": "^2.18.7",
+    "gatsby-plugin-catch-links": "^2.1.19",
+    "gatsby-plugin-google-analytics": "^2.1.29",
+    "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-sharp": "^2.3.5",
+    "gatsby-plugin-sitemap": "^2.2.22",
+    "gatsby-plugin-styled-components": "^3.1.14",
+    "gatsby-plugin-typescript": "^2.3.1",
+    "gatsby-remark-images": "^3.1.35",
+    "gatsby-remark-prismjs": "^3.3.25",
+    "gatsby-source-filesystem": "^2.1.40",
     "gatsby-source-graphql": "^2.1.20",
-    "gatsby-transformer-sharp": "^2.2.23",
-    "prop-types": "^15.7.2",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "gatsby-transformer-remark": "^2.6.39",
+    "prismjs": "^1.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
-    "styled-components": "^4.4.0"
+    "slug": "^1.1.0",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1",
-    "prettier": "^1.18.2",
-    "typescript": "^3.6.4"
+    "@types/react-helmet": "^5.0.15",
+    "@types/rebass": "^4.0.4",
+    "@types/styled-components": "^5.0.1",
+    "babel-eslint": "^10.0.3",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.17.0",
+    "gh-pages": "^2.2.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.8.3"
   },
   "keywords": [
-    "gatsby"
+    "Marcelo Cardoso",
+    "gatsby",
+    "personal",
+    "portfolio",
+    "blog",
+    "static",
+    "software",
+    "engineer",
+    "frontend",
+    "developer"
   ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "develop-tunnel": "gatsby develop -H 0.0.0.0",
+    "start": "gatsby develop",
+    "start:tunnel": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
-    "type-check": "tsc --noEmit",
-    "deploy": "gatsby build && gh-pages -d public -b master -r https://$GH_TOKEN@github.com/marcelovicentegc/marcelovicentegc.github.io.git"
+    "lint": "eslint src",
+    "check": "tsc --noEmit",
+    "deploy": "gatsby build && gh-pages -d public -b master -r https://$GH_TOKEN@github.com/marcelovicentegc/marcelovicentegc.github.io.git",
+    "all": "npm run build && npm run format && npm run lint && npm run check"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/marcelovicentegc/marcelovicentegc.github.io"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/marcelovicentegc/marcelovicentegc.github.io/issues"
   }
 }

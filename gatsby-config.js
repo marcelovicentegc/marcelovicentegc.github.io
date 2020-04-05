@@ -1,39 +1,58 @@
 require("dotenv").config()
 
 module.exports = {
+  pathPrefix: `/`,
   siteMetadata: {
+    author: "Marcelo Cardoso",
     title: `marcelovicentegc.github.io`,
-    description: `Marcelo Cardoso's Github page`,
-    author: `Marcelo Cardoso (marcelovicentegc)`,
+    siteUrl: "https://marcelovicentegc.github.io",
+    defaultTitle: "Marcelo Cardoso",
+    defaultDescription:
+      "Marcelo Cardoso is a frontend engineer in Salvador, building things at Cubos.",
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-catch-links",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: "pages",
+      },
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              linkImagesToOriginal: false,
+              maxWidth: 740,
+              withWebp: true,
+            },
+          },
+          {
+            resolve: "gatsby-remark-prismjs",
+            options: {
+              classPrefix: "language-",
+            },
+          },
+          "gatsby-plugin-sharp",
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-sitemap",
+    },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-128443240-3",
+      },
+    },
+    "gatsby-plugin-react-helmet",
     `gatsby-plugin-typescript`,
-    `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#24292e`,
-        theme_color: `#24292e`,
-        display: `minimal-ui`,
-        icon: `src/images/rocket.png`, // This path is relative to the root of the site.
-      },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
     {
       resolve: "gatsby-source-graphql",
       options: {

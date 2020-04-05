@@ -1,0 +1,153 @@
+import React from "react"
+import Helmet from "react-helmet"
+import { graphql, useStaticQuery } from "gatsby"
+import { Site } from "../components/Site"
+import { PageHeader } from "../components/PageHeader"
+import { Inner } from "../components/System"
+import { Section, SectionTitle } from "../components/Section"
+import { P, Text } from "../typography"
+import { Row } from "../components/Row"
+
+interface Repository {
+  name: string
+  description: string
+  url: string
+  stargazers: {
+    totalCount: number
+  }
+  forkCount: number
+}
+
+interface GithubData {
+  github: {
+    viewer: {
+      repositories: {
+        nodes: Repository[]
+      }
+    }
+  }
+}
+
+interface SiteData {
+  site: {
+    siteMetadata: {
+      defaultTitle: string
+      defaultDescription: string
+    }
+  }
+}
+
+interface Data extends SiteData, GithubData {}
+
+const ProfilePage: React.FC = () => {
+  const data: Data = useStaticQuery(graphql`
+    query ProfileQueryAndGetRepositories {
+      github {
+        viewer {
+          repositories(
+            privacy: PUBLIC
+            first: 100
+            isFork: false
+            orderBy: { field: UPDATED_AT, direction: DESC }
+          ) {
+            nodes {
+              name
+              description
+              url
+            }
+          }
+        }
+      }
+
+      site {
+        siteMetadata {
+          defaultTitle
+          defaultDescription
+        }
+      }
+    }
+  `)
+
+  const meta = data.site.siteMetadata
+  return (
+    <Site>
+      <main>
+        <Helmet title={`Profile - ${meta.defaultTitle}`}>
+          <meta
+            name="twitter:title"
+            content={`Profile - ${meta.defaultTitle}`}
+          />
+          <meta name="twitter:description" content={meta.defaultDescription} />
+        </Helmet>
+        <PageHeader title="Profile" />
+        <Inner>
+          <Section>
+            <P>
+              I'm Marcelo, a Frontend Engineer based in Salvador currently at{" "}
+              <a
+                href="https://cubos.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Cubos
+              </a>
+              .
+            </P>
+          </Section>
+          <Section>
+            <SectionTitle>Experience</SectionTitle>
+            <P fontWeight={500}>Cubos (2019 - Present)</P>
+            <P>
+              I developed and maintained web applications within the range of 5
+              to 80k lines mostly written in React, while also writing unit
+              tests, building pipelines and documenting the front-end, back-end
+              and the business logic. The projects I had a major role were the
+              Fitdance (an e-commerce and a system to manage both the e-commerce
+              and the dancing platform business) and Credcesta (a payroll loan
+              platform implemented in the state of Bahia, Brazil, for clients
+              and the business owners. I built the website for users to manage
+              their payroll loans, the website for the Credcesta staff to manage
+              themselves and send push notifications, both using a UI library I
+              built - and deployed to a private NPM registry - based on the
+              design system developed at Cubos. Besides that, I managed to
+              insert a CMS into their institutional, static website, using
+              Django, moving the code base previously written with the Pug
+              template engine and Gulp to Django, integrating with AWS S3). I
+              also participated/contributed to projects such as BBNK (a
+              white-label banking generator solution), Lex (an institutional
+              website for a tributary technology company), Amigo Edu (a website
+              that gathers graduation courses information and offers discounts
+              trough the platform), Cubos' institutional website, created some
+              intern tools such as an email signature generator and a code
+              generator (sdkgen) playground, as well as contributed to the
+              creation of a quality-oriented web development culture.
+            </P>
+          </Section>
+          <Section>
+            <SectionTitle>Personal projects</SectionTitle>
+            {data.github.viewer.repositories.nodes.map(project => {
+              return (
+                <Row>
+                  <Text>
+                    <a href={project.url}>
+                      {project.name}{" "}
+                      {project.description && `- ${project.description}`}
+                    </a>
+                  </Text>
+                </Row>
+              )
+            })}
+          </Section>
+          <Section>
+            <SectionTitle>Resume</SectionTitle>
+            <Text>
+              <a href="">Download as PDF</a>
+            </Text>
+          </Section>
+        </Inner>
+      </main>
+    </Site>
+  )
+}
+
+export default ProfilePage
