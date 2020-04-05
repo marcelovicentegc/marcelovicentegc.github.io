@@ -101,26 +101,40 @@ const ProfilePage: React.FC = () => {
               I developed and maintained web applications within the range of 5
               to 80k lines mostly written in React, while also writing unit
               tests, building pipelines and documenting the front-end, back-end
-              and the business logic. The projects I had a major role were the
-              Fitdance (an e-commerce and a system to manage both the e-commerce
-              and the dancing platform business) and Credcesta (a payroll loan
-              platform implemented in the state of Bahia, Brazil, for clients
-              and the business owners. I built the website for users to manage
-              their payroll loans, the website for the Credcesta staff to manage
-              themselves and send push notifications, both using a UI library I
-              built - and deployed to a private NPM registry - based on the
-              design system developed at Cubos. Besides that, I managed to
-              insert a CMS into their institutional, static website, using
-              Django, moving the code base previously written with the Pug
-              template engine and Gulp to Django, integrating with AWS S3). I
-              also participated/contributed to projects such as BBNK (a
-              white-label banking generator solution), Lex (an institutional
-              website for a tributary technology company), Amigo Edu (a website
-              that gathers graduation courses information and offers discounts
-              trough the platform), Cubos' institutional website, created some
-              intern tools such as an email signature generator and a code
-              generator (sdkgen) playground, as well as contributed to the
-              creation of a quality-oriented web development culture.
+              and the business logic.
+            </P>
+            <P>The projects I had a major role were Fitdance and Credcesta.</P>
+            <P>
+              Fitdance is a huge dancing platform, mainly online. At Fitdance, I
+              built an e-commerce and a CMS to manage both the e-commerce and
+              the dancing platform itself.
+            </P>
+            <P>
+              Credcesta is a payroll loan platform implemented in the state of
+              Bahia, Brazil, for clients and the business owners. There, I built
+              the website for users to manage their payroll loans and the
+              website for the Credcesta staff to manage themselves and send push
+              notifications to their clients. I used a UI library I built and
+              made available on a private NPM registry based on the design
+              system developed at Cubos on both websites. I also managed to
+              insert a CMS into their existent institutional, static website,
+              using Django, moving all the code base previously written with the
+              Pug template engine and Gulp, to the python framework, integrating
+              with some AWS services.
+            </P>
+            <P>
+              I also participated/contributed to projects such as BBNK - which
+              is a white-label "bank generator" -, Lex - which is an
+              institutional website for a tributary technology company -, Amigo
+              Edu - an application that gathers graduation courses information
+              and offers discounts trough the platform - and Cubos'
+              institutional website. I created some internal tools such as an
+              email signature generator and a code generator (sdkgen) playground
+              (which is available on Github by the way). Besides that, I
+              contributed to the creation of a quality-oriented web development
+              culture, made awesome connections I'll carry with me forever,
+              learned a lot from my colleagues and shared as much as I could
+              with them.
             </P>
           </Section>
           <Section>
