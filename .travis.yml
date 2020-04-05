@@ -3,9 +3,12 @@ before_script:
   - npm install -g gatsby-cli
 node_js:
   - "10"
+build:
+  provider: script
+  script: npm ci && npm run build
 deploy:
   provider: script
-  script: yarn install && yarn run deploy
+  script: npm ci && npm run deploy
   skip_cleanup: true
   on:
     branch: master-source
