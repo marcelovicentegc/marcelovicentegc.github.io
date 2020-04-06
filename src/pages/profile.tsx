@@ -99,9 +99,9 @@ const ProfilePage: React.FC = () => {
             <P fontWeight={500}>Cubos (2019 - Present)</P>
             <P>
               I developed and maintained web applications within the range of 5
-              to 80k lines mostly written in React, while also writing unit
-              tests, building pipelines and documenting the front-end, back-end
-              and the business logic.
+              to 80k lines mostly written in React, on a MVVM fashion, while
+              also writing unit tests, building pipelines and documenting the
+              front-end, back-end and the business logic.
             </P>
             <P>The projects I had a major role were Fitdance and Credcesta.</P>
             <P>
