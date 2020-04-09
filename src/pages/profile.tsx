@@ -100,8 +100,9 @@ const ProfilePage: React.FC = () => {
             <P>
               I developed and maintained web applications within the range of 5
               to 80k lines mostly written in React, on a MVVM fashion, while
-              also writing unit tests, building pipelines and documenting the
-              front-end, back-end and the business logic.
+              also writing unit tests, building pipelines, documenting the
+              front-end, back-end, the business logic and developing APIs with
+              Typescript.
             </P>
             <P>The projects I had a major role were Fitdance and Credcesta.</P>
             <P>
@@ -116,11 +117,15 @@ const ProfilePage: React.FC = () => {
               website for the Credcesta staff to manage themselves and send push
               notifications to their clients. I used a UI library I built and
               made available on a private NPM registry based on the design
-              system developed at Cubos on both websites. I also managed to
-              insert a CMS into their existent institutional, static website,
-              using Django, moving all the code base previously written with the
-              Pug template engine and Gulp, to the python framework, integrating
-              with some AWS services.
+              system developed at Cubos on both websites. In addition to it, I
+              managed to insert a CMS into their existent institutional, static
+              website, using Django, moving all the code base previously written
+              with the Pug template engine and Gulp, to the python framework,
+              integrating with some AWS services. I also wrote the push
+              notifications API and an API to manage the staff, as well as
+              contributed to the API consumed by the main application - the one
+              for users to manage their payroall loans - clients (iOS, Android
+              and Web).
             </P>
             <P>
               I also participated/contributed to projects such as BBNK - which
