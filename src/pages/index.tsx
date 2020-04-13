@@ -78,7 +78,7 @@ export default () => (
         allMarkdownRemark(sort: { fields: [fields___date], order: DESC }) {
           edges {
             node {
-              excerpt
+              excerpt(pruneLength: 100)
               id
               fields {
                 date(formatString: "MMMM DD, YYYY")

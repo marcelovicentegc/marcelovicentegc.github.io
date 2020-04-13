@@ -26,7 +26,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         const day = match[3]
         const filename = match[4]
 
-        slug = `/journal/${slugify(filename)}/`
+        slug = `/blog/${slugify(filename)}/`
 
         const date = new Date(
           Number.parseInt(year),
@@ -68,6 +68,7 @@ exports.createPages = ({ actions, graphql }) => {
             fields {
               slug
             }
+            html
           }
         }
       }

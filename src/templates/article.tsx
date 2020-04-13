@@ -63,6 +63,7 @@ export const pageQuery = graphql`
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
       excerpt
       fields {
         date(formatString: "MMMM DD, YYYY")
