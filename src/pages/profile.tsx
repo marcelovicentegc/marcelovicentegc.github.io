@@ -168,12 +168,12 @@ const ProfilePage: React.FC = () => {
               )
             })}
           </Section>
-          <Section>
+          {/* <Section>
             <SectionTitle>Resume</SectionTitle>
             <Text>
               <a href="">Download as PDF</a>
             </Text>
-          </Section>
+          </Section> */}
         </Inner>
       </main>
     </Site>
