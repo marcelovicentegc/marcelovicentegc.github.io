@@ -100,32 +100,43 @@ const ProfilePage: React.FC = () => {
             <P>
               I developed and maintained web applications within the range of 5
               to 80k lines mostly written in React, on a MVVM fashion, while
-              also writing unit tests, building pipelines, documenting the
-              front-end, back-end, the business logic and developing APIs with
-              Typescript.
+              also writing unit tests, building complex pipelines, documenting
+              the front-end, back-end, the business logic and developing APIs
+              with Typescript.
             </P>
             <P>The projects I had a major role were Fitdance and Credcesta.</P>
             <P>
               Fitdance is a huge dancing platform, mainly online. At Fitdance, I
               built an e-commerce and a CMS to manage both the e-commerce and
-              the dancing platform itself.
+              the dancing platform itself. We were a team of eight people: a
+              project manager, a QA analyst, four backend developers and two
+              frontend developers - with me included. The e-commerce handles
+              100k users/month.
             </P>
             <P>
               Credcesta is a payroll loan platform implemented in the state of
               Bahia, Brazil, for clients and the business owners. There, I built
               the website for users to manage their payroll loans and the
-              website for the Credcesta staff to manage themselves and send push
+              website for the Credcesta staff to manage themselves, visualize
+              data related to the main platform usage, and send push
               notifications to their clients. I used a UI library I built and
               made available on a private NPM registry based on the design
               system developed at Cubos on both websites. In addition to it, I
               managed to insert a CMS into their existent institutional, static
               website, using Django, moving all the code base previously written
-              with the Pug template engine and Gulp, to the python framework,
-              integrating with some AWS services. I also wrote the push
-              notifications API and an API to manage the staff, as well as
+              with the Pug template engine and Gulp to the python framework,
+              integrating with some AWS services and making a REST API available
+              to fetch data about stores affiliated to Credcesta. The static
+              website was Cubos' first Django product released. I also wrote the
+              push notifications API and an API to manage the staff, as well as
               contributed to the API consumed by the main application - the one
               for users to manage their payroall loans - clients (iOS, Android
-              and Web).
+              and Web). I used Kubernetes to deploy the push notifications API,
+              the admin API, the institucional website, the admin website and
+              the main platform website. We were a team of eleven: three Android
+              developers, two iOS developers, one designer, one QA analyst,
+              three backend developers and one frontend developer with an active
+              role on the backend.
             </P>
             <P>
               I also participated/contributed to projects such as BBNK - which
