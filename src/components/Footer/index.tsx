@@ -53,7 +53,7 @@ export const Footer = () => (
         rel="noopener noreferrer"
         href="http://github.com/marcelovicentegc/marcelovicentegc.github.io"
       >
-        View source code
+        Source code
       </a>
     </span>
   </StyledFooter>

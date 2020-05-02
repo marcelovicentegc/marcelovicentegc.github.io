@@ -99,62 +99,91 @@ const ProfilePage: React.FC = () => {
             <P fontWeight={500}>Cubos (2019 - Present)</P>
             <P>
               I developed and maintained web applications within the range of 5
-              to 80k lines mostly written in React, on a MVVM fashion, while
-              also writing unit tests, building complex pipelines, documenting
-              the front-end, back-end, the business logic and developing APIs
-              with Typescript.
+              to 80k lines of code mostly written with React, on a MVVM fashion,
+              while also writing unit tests, building complex pipelines,
+              documenting the front-end, back-end, the business logic and
+              developing APIs with Typescript and an incredibly amazing tool
+              developed internally at Cubos called &nbsp;
+              <a href="https://github.com/sdkgen/sdkgen" target="_blank">
+                sdkgen
+              </a>
+              .
             </P>
             <P>The projects I had a major role were Fitdance and Credcesta.</P>
             <P>
-              Fitdance is a huge dancing platform, mainly online. At Fitdance, I
-              built an e-commerce and a CMS to manage both the e-commerce and
-              the dancing platform itself. We were a team of eight people: a
-              project manager, a QA analyst, four backend developers and two
-              frontend developers - with me included. The e-commerce handles
-              100k users/month.
+              Fitdance is a huge dancing platform, mainly online. While at
+              Fitdance, I built an{" "}
+              <a href="https://fitdance.com" target="_blank">
+                e-commerce
+              </a>{" "}
+              and a CMS to manage both the e-commerce and the dancing platform
+              itself. We were a team of eight people: a project manager, a QA
+              analyst, four backend developers and two frontend developers -
+              with me included. The e-commerce handles 100k users/month.
             </P>
             <P>
               Credcesta is a payroll loan platform implemented in the state of
-              Bahia, Brazil, for clients and the business owners. There, I built
-              the website for users to manage their payroll loans and the
-              website for the Credcesta staff to manage themselves, visualize
-              data related to the main platform usage, and send push
-              notifications to their clients. I used a UI library I built and
-              made available on a private NPM registry based on the design
-              system developed at Cubos on both websites. In addition to it, I
-              managed to insert a CMS into their existent institutional, static
-              website, using Django, moving all the code base previously written
-              with the Pug template engine and Gulp to the python framework,
-              integrating with some AWS services and making a REST API available
-              to fetch data about stores affiliated to Credcesta. The static
-              website was Cubos' first Django product released. I also wrote the
-              push notifications API and an API to manage the staff, as well as
-              contributed to the API consumed by the main application - the one
-              for users to manage their payroall loans - clients (iOS, Android
-              and Web). I used Kubernetes to deploy the push notifications API,
-              the admin API, the institucional website, the admin website and
-              the main platform website. We were a team of eleven: three Android
+              Bahia, Brazil, for clients and the business owners. I maintained
+              the{" "}
+              <a href="https://portal.credcesta.com.br" target="_blank">
+                website for users to manage their payroll loans
+              </a>{" "}
+              while working on its redesign - which ended up being an entirely
+              new application -, and the website for the Credcesta staff to
+              manage themselves, visualize data related to the main platform
+              usage, and send push notifications to their clients. I used a UI
+              library I built and made available on a private NPM registry based
+              on the design system developed at Cubos on both websites. In
+              addition to it,{" "}
+              <a href="https://www.credcesta.com.br" target="_blank">
+                I managed to insert a CMS into their existent institutional
+              </a>
+              , static website, using Django, moving all the code base
+              previously written with the Pug template engine and Gulp to the
+              python framework, integrating with some AWS services and making a
+              REST API available to fetch data about stores affiliated to
+              Credcesta. The static website is Cubos' first Django product
+              released. I also wrote the push notifications API and an API to
+              manage the staff, as well as contributed to the API consumed by
+              the main application - the one for users to manage their payroll
+              loans - clients (iOS, Android and Web). I used Kubernetes to
+              deploy the push notifications API, the admin API, the
+              institucional website, the admin website and the main platform
+              website. The team grew steadily from the beginning, and I was the
+              only frontend developer from September/2019 to April/2020. Right
+              now we are a team of twelve and still growing: three Android
               developers, two iOS developers, one designer, one QA analyst,
-              three backend developers and one frontend developer with an active
-              role on the backend.
+              three backend developers and two frontend developers, with myself
+              having an active role on the backend.
             </P>
             <P>
               I also participated/contributed to projects such as BBNK - which
               is a white-label "bank generator" -, Lex - which is an
-              institutional website for a tributary technology company -, Amigo
-              Edu - an application that gathers graduation courses information
-              and offers discounts trough the platform - and Cubos'
-              institutional website. I created some internal tools such as an
-              email signature generator and a code generator (sdkgen) playground
-              (which is available on Github by the way). Besides that, I
-              contributed to the creation of a quality-oriented web development
-              culture, made awesome connections I'll carry with me forever,
-              learned a lot from my colleagues and shared as much as I could
-              with them.
+              institutional website for a tributary technology company -,{" "}
+              <a href={"https://amigoedu.com.br"} target={"_blank"}>
+                Amigo Edu
+              </a>{" "}
+              - an application that gathers graduation courses information and
+              offers discounts through the platform - and{" "}
+              <a href={"https://cubos.io"} target={"_blank"}>
+                Cubos' institutional website
+              </a>
+              . I created some internal tools such as an email signature
+              generator and a code generator (sdkgen) playground (
+              <a
+                href={"https://github.com/marcelovicentegc/sdkgen-playground"}
+                target={"_blank"}
+              >
+                which is available on Github by the way
+              </a>
+              ). Besides that, I contributed to the creation of a
+              quality-oriented web development culture, made awesome connections
+              I'll carry with me forever, learned a lot from my colleagues and
+              shared as much as I could with them.
             </P>
           </Section>
           <Section>
-            <SectionTitle>Personal projects</SectionTitle>
+            <SectionTitle>Open source projects</SectionTitle>
             {data.github.viewer.repositories.nodes.map(project => {
               return (
                 <Row>
@@ -168,12 +197,14 @@ const ProfilePage: React.FC = () => {
               )
             })}
           </Section>
-          {/* <Section>
+          <Section>
             <SectionTitle>Resume</SectionTitle>
             <Text>
-              <a href="">Download as PDF</a>
+              <a href="https://stackoverflow.com/users/story/pdf/9317004?View=Pdf">
+                Download as PDF
+              </a>
             </Text>
-          </Section> */}
+          </Section>
         </Inner>
       </main>
     </Site>

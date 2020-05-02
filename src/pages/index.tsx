@@ -31,7 +31,7 @@ const IndexPage = ({ data }) => {
         </Helmet>
         <HomeFeature py={[3, 4, 5]}>
           <Inner>
-            <H1>Code, at scale.</H1>
+            <H1>Get shit done, at scale.</H1>
             <P>I'm Marcelo, a Frontend Engineer based in Salvador.</P>
           </Inner>
         </HomeFeature>

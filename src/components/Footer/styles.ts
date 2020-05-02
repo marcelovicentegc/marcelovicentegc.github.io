@@ -10,7 +10,7 @@ export const StyledFooter = styled(Flex)`
   color: ${props => props.theme.colors.secondary};
 
   span {
-    word-break: word;
+    word-break: break-word;
   }
 
   a {
