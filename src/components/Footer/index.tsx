@@ -19,7 +19,7 @@ export const Footer = () => (
       <a
         target="_blank"
         rel="noopener noreferrer me"
-        href="http://medium.com/marcelovicentegc"
+        href="https://medium.com/marcelovicentegc"
         itemProp="sameAs"
       >
         Medium
@@ -35,7 +35,7 @@ export const Footer = () => (
       <a
         target="_blank"
         rel="noopener noreferrer me"
-        href="http://github.com/marcelovicentegc"
+        href="https://github.com/marcelovicentegc"
         itemProp="sameAs"
       >
         GitHub
@@ -43,7 +43,7 @@ export const Footer = () => (
       <a
         target="_blank"
         rel="noopener noreferrer me"
-        href="http://sourcerer.io/marcelovicentegc"
+        href="https://sourcerer.io/marcelovicentegc"
         itemProp="sameAs"
       >
         Sourcerer
@@ -51,9 +51,23 @@ export const Footer = () => (
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="http://github.com/marcelovicentegc/marcelovicentegc.github.io"
+        href="https://github.com/marcelovicentegc/marcelovicentegc.github.io"
       >
         Source code
+      </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://stackoverflow.com/users/9317004/marcelo-cardoso?tab=profile"
+      >
+        StackOverflow
+      </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.npmjs.com/~marcelovicentegc"
+      >
+        NPM
       </a>
     </span>
   </StyledFooter>
