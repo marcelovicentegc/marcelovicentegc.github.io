@@ -109,7 +109,9 @@ const ProfilePage: React.FC = () => {
               </a>
               .
             </P>
-            <P>The projects I had a major role were Fitdance and Credcesta.</P>
+            <P>
+              The projects I had a critical role were Fitdance and Credcesta.
+            </P>
             <P>
               Fitdance is a huge dancing platform, mainly online. While at
               Fitdance, I built an{" "}
@@ -125,13 +127,12 @@ const ProfilePage: React.FC = () => {
               Credcesta is a payroll loan platform implemented in the state of
               Bahia, Brazil, for clients and the business owners. I maintained
               the website for users to manage their payroll loans while working
-              on its redesign and expansion - which ended up being an entirely
-              new application -, and the website for the Credcesta staff to
-              manage themselves, visualize data related to the main platform
-              usage, and send push notifications to their clients. I used a UI
-              library I built and made available on a private NPM registry based
-              on the design system developed at Cubos on both websites. In
-              addition to it,{" "}
+              on its redesign and expansion. Besides that, I built the website
+              for the Credcesta staff to manage themselves, visualize data
+              related to the main platform usage, and send push notifications to
+              their clients. I used a UI library I built and made available on a
+              private NPM registry based on the design system developed at Cubos
+              on both websites. In addition to it,{" "}
               <a href="https://www.credcesta.com.br" target="_blank">
                 I managed to insert a CMS into their preexistent institutional
               </a>
@@ -155,8 +156,7 @@ const ProfilePage: React.FC = () => {
             </P>
             <P>
               I also participated/contributed to projects such as BBNK - which
-              is a white-label "bank generator" -, Lex - which is an
-              institutional website for a tributary technology company -,{" "}
+              is a white-label "bank generator" -,{" "}
               <a href={"https://amigoedu.com.br"} target={"_blank"}>
                 Amigo Edu
               </a>{" "}
@@ -181,6 +181,18 @@ const ProfilePage: React.FC = () => {
           </Section>
           <Section>
             <SectionTitle>Open source projects</SectionTitle>
+            <Row>
+              <Text>
+                <a
+                  href={
+                    "https://underworld-industries.github.io/react-github-heatmap/"
+                  }
+                >
+                  {"react-github-heatmap"}{" "}
+                  {`- A plugable general purpose Github-like contribution graph.`}
+                </a>
+              </Text>
+            </Row>
             {data.github.viewer.repositories.nodes.map(project => {
               return (
                 <Row>
