@@ -124,11 +124,8 @@ const ProfilePage: React.FC = () => {
             <P>
               Credcesta is a payroll loan platform implemented in the state of
               Bahia, Brazil, for clients and the business owners. I maintained
-              the{" "}
-              <a href="https://portal.credcesta.com.br" target="_blank">
-                website for users to manage their payroll loans
-              </a>{" "}
-              while working on its redesign - which ended up being an entirely
+              the website for users to manage their payroll loans while working
+              on its redesign and expansion - which ended up being an entirely
               new application -, and the website for the Credcesta staff to
               manage themselves, visualize data related to the main platform
               usage, and send push notifications to their clients. I used a UI
@@ -136,7 +133,7 @@ const ProfilePage: React.FC = () => {
               on the design system developed at Cubos on both websites. In
               addition to it,{" "}
               <a href="https://www.credcesta.com.br" target="_blank">
-                I managed to insert a CMS into their existent institutional
+                I managed to insert a CMS into their preexistent institutional
               </a>
               , static website, using Django, moving all the code base
               previously written with the Pug template engine and Gulp to the

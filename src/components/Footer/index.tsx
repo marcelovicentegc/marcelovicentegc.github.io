@@ -52,6 +52,7 @@ export const Footer = () => (
         target="_blank"
         rel="noopener noreferrer"
         href="https://github.com/marcelovicentegc/marcelovicentegc.github.io"
+        itemProp="sameAs"
       >
         Source code
       </a>
@@ -59,6 +60,7 @@ export const Footer = () => (
         target="_blank"
         rel="noopener noreferrer"
         href="https://stackoverflow.com/users/9317004/marcelo-cardoso?tab=profile"
+        itemProp="sameAs"
       >
         StackOverflow
       </a>
@@ -66,6 +68,7 @@ export const Footer = () => (
         target="_blank"
         rel="noopener noreferrer"
         href="https://www.npmjs.com/~marcelovicentegc"
+        itemProp="sameAs"
       >
         NPM
       </a>
