@@ -104,7 +104,11 @@ const ProfilePage: React.FC = () => {
               documenting the front-end, back-end, the business logic and
               developing APIs with Typescript and an incredibly amazing tool
               developed internally at Cubos called &nbsp;
-              <a href="https://github.com/sdkgen/sdkgen" target="_blank">
+              <a
+                href="https://github.com/sdkgen/sdkgen"
+                target="_blank"
+                rel={"noopener norefereer"}
+              >
                 sdkgen
               </a>
               .
@@ -115,7 +119,11 @@ const ProfilePage: React.FC = () => {
             <P>
               Fitdance is a huge dancing platform, mainly online. While at
               Fitdance, I built an{" "}
-              <a href="https://fitdance.com" target="_blank">
+              <a
+                href="https://fitdance.com"
+                target="_blank"
+                rel={"noopener norefereer"}
+              >
                 e-commerce
               </a>{" "}
               and a CMS to manage both the e-commerce and the dancing platform
@@ -133,7 +141,11 @@ const ProfilePage: React.FC = () => {
               their clients. I used a UI library I built and made available on a
               private NPM registry based on the design system developed at Cubos
               on both websites. In addition to it,{" "}
-              <a href="https://www.credcesta.com.br" target="_blank">
+              <a
+                href="https://www.credcesta.com.br"
+                target="_blank"
+                rel={"noopener norefereer"}
+              >
                 I managed to insert a CMS into their preexistent institutional
               </a>
               , static website, using Django, moving all the code base
@@ -152,17 +164,26 @@ const ProfilePage: React.FC = () => {
               now we are a team of twelve and still growing: three Android
               developers, two iOS developers, one designer, one QA analyst,
               three backend developers and two frontend developers, with myself
-              having an active role on the backend.
+              having an active role on the backend, being the current lead
+              developer of my stack.
             </P>
             <P>
               I also participated/contributed to projects such as BBNK - which
               is a white-label "bank generator" -,{" "}
-              <a href={"https://amigoedu.com.br"} target={"_blank"}>
+              <a
+                href={"https://amigoedu.com.br"}
+                target={"_blank"}
+                rel={"noopener norefereer"}
+              >
                 Amigo Edu
               </a>{" "}
               - an application that gathers graduation courses information and
               offers discounts through the platform - and{" "}
-              <a href={"https://cubos.io"} target={"_blank"}>
+              <a
+                href={"https://cubos.io"}
+                target={"_blank"}
+                rel={"noopener norefereer"}
+              >
                 Cubos' institutional website
               </a>
               . I created some internal tools such as an email signature
@@ -170,6 +191,7 @@ const ProfilePage: React.FC = () => {
               <a
                 href={"https://github.com/marcelovicentegc/sdkgen-playground"}
                 target={"_blank"}
+                rel={"noopener norefereer"}
               >
                 which is available on Github by the way
               </a>
@@ -177,6 +199,50 @@ const ProfilePage: React.FC = () => {
               quality-oriented web development culture, made awesome connections
               I'll carry with me forever, learned a lot from my colleagues and
               shared as much as I could with them.
+            </P>
+            <P fontWeight={500}>Binder (2020)</P>
+            <P>
+              Binder is a prototype of a project running for the 2020{" "}
+              <a
+                href={"https://www.institutotomieohtake.org.br/"}
+                rel={"noopener norefereer"}
+                target={"_blank"}
+              >
+                Tomie Ohtake Leroy Merlin Institue
+              </a>{" "}
+              Design Award, in São Paulo. Two open source projects were brought
+              to life from it, a{" "}
+              <a
+                href={"https://github.com/marcelovicentegc/binder-ui"}
+                rel={"noopener norefereer"}
+                target={"_blank"}
+              >
+                UI library
+              </a>
+              , and a{" "}
+              <a
+                href={"https://github.com/marcelovicentegc/binder-editor"}
+                rel={"noopener norefereer"}
+                target={"_blank"}
+              >
+                white board tool
+              </a>
+              , the latter being a custom fork from the awesome{" "}
+              <a href={"https://excalidraw.com/"}>Excalidraw</a> project. Binder
+              is about taking notes from classes. High schoolers from 9th to
+              11th grade are it's targeted audience. The prototype's mocked
+              functionalities lets you create, customize and manage boards and
+              binders. It relies on Gatsby to build the static content, and on
+              Mobx to manage the global state. Binder was designed to be ran on
+              top of browsers under tablets. You can visit the prototype{" "}
+              <a
+                href={"https://binder-prototype.netlify.com/"}
+                rel={"noopener norefereer"}
+                target={"_blank"}
+              >
+                here
+              </a>
+              .
             </P>
           </Section>
           <Section>
@@ -187,6 +253,8 @@ const ProfilePage: React.FC = () => {
                   href={
                     "https://underworld-industries.github.io/react-github-heatmap/"
                   }
+                  rel={"noopener norefereer"}
+                  target={"_blank"}
                 >
                   {"react-github-heatmap"}{" "}
                   {`- A plugable general purpose Github-like contribution graph.`}
@@ -197,7 +265,11 @@ const ProfilePage: React.FC = () => {
               return (
                 <Row>
                   <Text>
-                    <a href={project.url}>
+                    <a
+                      href={project.url}
+                      rel={"noopener norefereer"}
+                      target={"_blank"}
+                    >
                       {project.name}{" "}
                       {project.description && `- ${project.description}`}
                     </a>
@@ -209,7 +281,10 @@ const ProfilePage: React.FC = () => {
           <Section>
             <SectionTitle>Resume</SectionTitle>
             <Text>
-              <a href="https://stackoverflow.com/users/story/pdf/9317004?View=Pdf">
+              <a
+                href="https://stackoverflow.com/users/story/pdf/9317004?View=Pdf"
+                rel={"noopener norefereer"}
+              >
                 Download as PDF
               </a>
             </Text>
