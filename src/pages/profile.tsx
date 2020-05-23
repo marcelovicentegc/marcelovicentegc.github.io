@@ -164,7 +164,7 @@ const ProfilePage: React.FC = () => {
               now we are a team of twelve and still growing: three Android
               developers, two iOS developers, one designer, one QA analyst,
               three backend developers and two frontend developers, with myself
-              having an active role on the backend, being the current lead
+              having an active role on the backend and being the current lead
               developer of my stack.
             </P>
             <P>
@@ -258,6 +258,18 @@ const ProfilePage: React.FC = () => {
                 >
                   {"react-github-heatmap"}{" "}
                   {`- A plugable general purpose Github-like contribution graph.`}
+                </a>
+              </Text>
+            </Row>
+            <Row>
+              <Text>
+                <a
+                  href={"https://github.com/three-o-four/esther"}
+                  rel={"noopener norefereer"}
+                  target={"_blank"}
+                >
+                  {"esther"}{" "}
+                  {`- Esther, a dead simple script to tweet random quotes.`}
                 </a>
               </Text>
             </Row>

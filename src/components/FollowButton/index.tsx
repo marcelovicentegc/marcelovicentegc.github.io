@@ -4,10 +4,11 @@ import { StyledButton } from "./styles"
 export const FollowButton = props => (
   <StyledButton
     as="a"
-    href="https://github.com/marcelovicentegc"
+    href="https://twitter.com/macelovcardoso"
     target="_blank"
+    rel={"noopener norefereer"}
     {...props}
   >
-    @marcelovicentegc on Github
+    @marcelovicentegc on Twitter
   </StyledButton>
 )
