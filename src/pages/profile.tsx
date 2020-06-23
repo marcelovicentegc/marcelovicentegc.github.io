@@ -165,7 +165,7 @@ const ProfilePage: React.FC = () => {
               developers, two iOS developers, one designer, one QA analyst,
               three backend developers and two frontend developers, with myself
               having an active role on the backend and being the current lead
-              developer of my stack.
+              developer of my stack and team leader.
             </P>
             <P>
               I also participated/contributed to projects such as BBNK - which
