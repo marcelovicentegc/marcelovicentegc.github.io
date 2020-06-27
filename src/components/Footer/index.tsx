@@ -19,7 +19,7 @@ export const Footer = () => (
       <a
         target="_blank"
         rel="noopener noreferrer me"
-        href="https://medium.com/marcelovicentegc"
+        href="https://medium.com/@marcelovicentegc"
         itemProp="sameAs"
       >
         Medium
