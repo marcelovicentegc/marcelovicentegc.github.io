@@ -6,6 +6,7 @@ import { Site } from "../components/Site"
 import { Text, P, H1 } from "../typography"
 import { Inner, Box, Flex } from "../components/System"
 import { Section, SectionTitle } from "../components/Section"
+import { Main } from "../components/Main"
 
 const PostDate = styled(Text)`
   font-size: 0.8em;
@@ -24,7 +25,7 @@ const IndexPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
   return (
     <Site>
-      <main>
+      <Main>
         <Helmet title={meta.defaultTitle}>
           <meta name="twitter:title" content={meta.defaultTitle} />
           <meta name="twitter:description" content={meta.defaultDescription} />
@@ -32,7 +33,7 @@ const IndexPage = ({ data }) => {
         <HomeFeature py={[3, 4, 5]}>
           <Inner>
             <H1>Get shit done, at scale.</H1>
-            <P>I'm Marcelo, a Frontend Engineer based in Salvador.</P>
+            <P>I'm Marcelo, a Full Stack Engineer based in Salvador.</P>
           </Inner>
         </HomeFeature>
         <Section>
@@ -60,7 +61,7 @@ const IndexPage = ({ data }) => {
               ))}
           </Inner>
         </Section>
-      </main>
+      </Main>
     </Site>
   )
 }

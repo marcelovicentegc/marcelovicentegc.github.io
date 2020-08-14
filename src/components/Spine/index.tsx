@@ -9,7 +9,7 @@ export const Spine = () => (
       </Logo>
     </a>
     <Mo fontSize={1}>
-      Salvador based Frontend Engineer currently working at Cubos
+      Salvador based Full Stack Engineer currently working at Cubos
     </Mo>
     <Flair>
       <span role="img" aria-label="rocket">

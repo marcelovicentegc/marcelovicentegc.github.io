@@ -11,7 +11,7 @@ export const Footer = () => (
       <a
         target="_blank"
         rel="noopener noreferrer me"
-        href="https://www.linkedin.com/in/marcelo-cardoso-b77261144/"
+        href="https://www.linkedin.com/in/marcelovicentegc/"
         itemProp="sameAs"
       >
         Linkedin

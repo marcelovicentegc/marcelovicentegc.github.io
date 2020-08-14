@@ -43,17 +43,24 @@ export const GlobalStyle = createGlobalStyle`
     html {
       background-color: ${props => props.theme.colors.primary};
 
+      --scrollbarBG: ${props => props.theme.colors.primary};
+      --thumbBG: ${props => props.theme.colors.secondary};
+      
       &::-webkit-scrollbar {
-        width: 4px;
+        width: 11px;
       }
+      
+      scrollbar-width: thin;
+      scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+      
       &::-webkit-scrollbar-track {
-        background: #fff;
+        background: var(--scrollbarBG);
       }
+      
       &::-webkit-scrollbar-thumb {
-        background: #000;
-      }
-      &::-webkit-scrollbar-thumb:hover {
-        background: #555;
+        background-color: var(--thumbBG) ;
+        border-radius: 6px;
+        border: 3px solid var(--scrollbarBG);
       }
     }
 

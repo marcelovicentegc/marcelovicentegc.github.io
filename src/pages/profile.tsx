@@ -83,7 +83,7 @@ const ProfilePage: React.FC = () => {
         <Inner>
           <Section>
             <P>
-              I'm Marcelo, a Frontend Engineer based in Salvador currently at{" "}
+              I'm Marcelo, a Full Stack Engineer based in Salvador currently at{" "}
               <a
                 href="https://cubos.io"
                 target="_blank"
@@ -127,20 +127,26 @@ const ProfilePage: React.FC = () => {
                 e-commerce
               </a>{" "}
               and a CMS to manage both the e-commerce and the dancing platform
-              itself. We were a team of eight people: a project manager, a QA
-              analyst, four backend developers and two frontend developers -
-              with me included. The e-commerce handles 100k users/month.
+              itself. The CMS' frontend relies on the Material UI design lib,
+              while the E-commerce design system was built in house. They were
+              moving from a third party CMS to their own CMS, and from one
+              payment gateway to another. We were assigned to make that
+              transition happen: a team of eight people - a project manager, a
+              QA analyst, four backend developers and two frontend developers.
+              The e-commerce welcomes 100k monthly users.
             </P>
             <P>
               Credcesta is a payroll loan platform implemented in the state of
-              Bahia, Brazil, for clients and the business owners. I maintained
-              the website for users to manage their payroll loans while working
-              on its redesign and expansion. Besides that, I built the website
-              for the Credcesta staff to manage themselves, visualize data
-              related to the main platform usage, and send push notifications to
-              their clients. I used a UI library I built and made available on a
-              private NPM registry based on the design system developed at Cubos
-              on both websites. In addition to it,{" "}
+              Bahia, Brazil, for clients and the business owners. Credcesta was
+              moving its credit card from a private label to Visa. That move
+              required big changes. I maintained the website for users to manage
+              their payroll loans while working on its redesign and expansion.
+              Besides that, I built the website for the Credcesta staff to
+              manage themselves, visualize data related to the main platform
+              usage, and send push notifications to their clients. I used a UI
+              library I built and made available on a private NPM registry based
+              on the design system developed at Cubos on both websites. In
+              addition to it,{" "}
               <a
                 href="https://www.credcesta.com.br"
                 target="_blank"
@@ -150,22 +156,26 @@ const ProfilePage: React.FC = () => {
               </a>
               , static website, using Django, moving all the code base
               previously written with the Pug template engine and Gulp to the
-              python framework, integrating with some AWS services and making a
-              REST API available to fetch data about stores affiliated to
-              Credcesta. The static website is Cubos' first Django product
-              released. I also wrote the push notifications API and an API to
-              manage the staff, as well as contributed to the API consumed by
-              the main application - the one for users to manage their payroll
-              loans - clients (iOS, Android and Web). I used Kubernetes to
-              deploy the push notifications API, the admin API, the
-              institucional website, the admin website and the main platform
-              website. The team grew steadily from the beginning, and I was the
-              only frontend developer from September/2019 to April/2020. Right
-              now we are a team of twelve and still growing: three Android
-              developers, two iOS developers, one designer, one QA analyst,
-              three backend developers and two frontend developers, with myself
-              having an active role on the backend and being the current lead
-              developer of my stack and team leader.
+              python framework, integrating with some AWS services (S3 and
+              SecretsManager) and making a REST API available to fetch data
+              about stores affiliated to Credcesta. The static website is Cubos'
+              first Django product ever released. I also wrote several
+              micro-services: a push notifications API, an authentication API,
+              an audit API, and an API to manage the staff, not speaking of the
+              API consumed by the main application - the one for users to manage
+              their payroll loans - clients (iOS, Android and Web) and its 40k
+              monthly users. We used Kubernetes to deploy every micro service,
+              the institucional website, the admin website and the main platform
+              website, as well as Firebase to deploy the admin website on a
+              development and a Q.A. environment. The team grew steadily from
+              the beginning, and I was the only frontend developer from
+              September/2019 to April/2020. The team peaked at August/2020 when
+              we were a team of twelve: three Android developers, two iOS
+              developers, one designer, one QA analyst, three backend developers
+              and two frontend developers, with myself having a full stack role,
+              and being the lead developer of my stacks and a squad leader. I
+              had a crucial role on key product decisions, development, delivery
+              and team management.
             </P>
             <P>
               I also participated/contributed to projects such as BBNK - which
@@ -199,6 +209,54 @@ const ProfilePage: React.FC = () => {
               quality-oriented web development culture, made awesome connections
               I'll carry with me forever, learned a lot from my colleagues and
               shared as much as I could with them.
+            </P>
+            <P fontWeight={500}>Eduardo Sampaio (2020)</P>
+            <P>
+              Eduardo needed to build a website for his political campaign as a
+              city councilor, and he needed it to be done fast. He wanted an
+              editable, high performing website, with open communication
+              channels with his visitors, as well as to receive live updates on
+              who was volunteering for his campaign or who had subscribed to his
+              newsletter. I built his website using Django, React, Typescript
+              and PostgreSQL. You can{" "}
+              <a
+                href={"https://eduardosampaionovo.com"}
+                target={"_blank"}
+                rel={"noopener norefereer"}
+              >
+                visit it here
+              </a>
+              .
+            </P>
+            <P>
+              It uses Memcached to cache the static content - served gzipped by
+              Nginx - and has a REST API (Django Rest Framework) which binds
+              React to Django's ORM and was deployed on Digital Ocean. It counts
+              on Cloudinary as its CDN.
+            </P>
+            <P>
+              I built CI/CD pipelines with Github Actions to ease the deployment
+              process and stripped down the code to make a React-Django
+              boilerplate{" "}
+              <a
+                href={
+                  "https://github.com/marcelovicentegc/django-react-typescript"
+                }
+                target={"_blank"}
+                rel={"noopener norefereer"}
+              >
+                available on Github
+              </a>
+              .
+            </P>
+            <P>
+              It was possible to capture several volunteers for his campaign, as
+              well as keep hundreds of followers updated through his newsletter
+              and increase overall lead.
+            </P>
+            <P>
+              It was a really fun project, Eduardo was really satisfied and I
+              still am its maintainer.
             </P>
             <P fontWeight={500}>Binder (2020)</P>
             <P>
@@ -247,32 +305,6 @@ const ProfilePage: React.FC = () => {
           </Section>
           <Section>
             <SectionTitle>Open source projects</SectionTitle>
-            <Row>
-              <Text>
-                <a
-                  href={
-                    "https://underworld-industries.github.io/react-github-heatmap/"
-                  }
-                  rel={"noopener norefereer"}
-                  target={"_blank"}
-                >
-                  {"react-github-heatmap"}{" "}
-                  {`- A plugable general purpose Github-like contribution graph.`}
-                </a>
-              </Text>
-            </Row>
-            <Row>
-              <Text>
-                <a
-                  href={"https://github.com/three-o-four/esther"}
-                  rel={"noopener norefereer"}
-                  target={"_blank"}
-                >
-                  {"esther"}{" "}
-                  {`- Esther, a dead simple script to tweet random quotes.`}
-                </a>
-              </Text>
-            </Row>
             {data.github.viewer.repositories.nodes.map(project => {
               return (
                 <Row>
