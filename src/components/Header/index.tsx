@@ -23,7 +23,10 @@ export default ({
               style={{
                 lineHeight: "1em",
                 fontWeight:
-                  window.location.pathname === "/" ? "bold" : "regular",
+                  typeof window !== "undefined" &&
+                  window.location.pathname === "/"
+                    ? "bold"
+                    : "regular",
               }}
             >
               <Link to="/">Home</Link>
@@ -35,7 +38,10 @@ export default ({
               style={{
                 lineHeight: "1em",
                 fontWeight:
-                  window.location.pathname === "/profile/" ? "bold" : "regular",
+                  typeof window !== "undefined" &&
+                  window.location.pathname === "/profile/"
+                    ? "bold"
+                    : "regular",
               }}
             >
               <Link to="/profile/">Profile</Link>
