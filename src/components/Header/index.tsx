@@ -12,44 +12,48 @@ export default ({
 }: {
   onThemeChange: () => void
   selectedTheme: ThemeMode
-}) => (
-  <StyledNav as="header" justify="space-between">
-    <Inner>
-      <Nav as="nav">
-        <ul>
-          <li>
-            <Text
-              fontSize={[1, 2]}
-              style={{
-                lineHeight: "1em",
-                fontWeight:
-                  typeof window !== "undefined" &&
-                  window.location.pathname === "/"
-                    ? "bold"
-                    : "regular",
-              }}
-            >
-              <Link to="/">Home</Link>
-            </Text>
-          </li>
-          <li>
-            <Text
-              fontSize={[1, 2]}
-              style={{
-                lineHeight: "1em",
-                fontWeight:
-                  typeof window !== "undefined" &&
-                  window.location.pathname === "/profile/"
-                    ? "bold"
-                    : "regular",
-              }}
-            >
-              <Link to="/profile/">Profile</Link>
-            </Text>
-          </li>
-        </ul>
-        <StyledSwitch value={selectedTheme} onClick={onThemeChange} />
-      </Nav>
-    </Inner>
-  </StyledNav>
-)
+}) => {
+  const [currentMenuItem, setCurrentMenuItem] = React.useState<
+    "home" | "profile" | null
+  >(null)
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      setCurrentMenuItem(window.location.pathname === "/" ? "home" : "profile")
+    }
+  }, [])
+
+  return (
+    <StyledNav as="header" justify="space-between">
+      <Inner>
+        <Nav as="nav">
+          <ul>
+            <li>
+              <Text
+                fontSize={[1, 2]}
+                style={{
+                  lineHeight: "1em",
+                  fontWeight: currentMenuItem === "home" ? "bold" : "regular",
+                }}
+              >
+                <Link to="/">Home</Link>
+              </Text>
+            </li>
+            <li>
+              <Text
+                fontSize={[1, 2]}
+                style={{
+                  lineHeight: "1em",
+                  fontWeight:
+                    currentMenuItem === "profile" ? "bold" : "regular",
+                }}
+              >
+                <Link to="/profile/">Profile</Link>
+              </Text>
+            </li>
+          </ul>
+          <StyledSwitch value={selectedTheme} onClick={onThemeChange} />
+        </Nav>
+      </Inner>
+    </StyledNav>
+  )
+}
