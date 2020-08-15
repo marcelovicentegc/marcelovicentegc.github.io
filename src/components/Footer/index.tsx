@@ -1,7 +1,19 @@
 import React from "react"
 import { StyledFooter } from "./styles"
+import { LinkedinIcon } from "../../assets/icons/linkedin"
+import { GithubIcon } from "../../assets/icons/github"
+import { StackOverflowIcon } from "../../assets/icons/stackOverflow"
+import { MediumIcon } from "../../assets/icons/medium"
+import { NpmIcon } from "../../assets/icons/npm"
+import { StravaIcon } from "../../assets/icons/strava"
+import { CodeIcon } from "../../assets/icons/branch"
 
 const CURRENT_YEAR = new Date().getFullYear()
+
+const iconProps: React.CSSProperties = {
+  width: 15,
+  height: 15,
+}
 
 export const Footer = () => (
   <StyledFooter as="footer">
@@ -14,7 +26,7 @@ export const Footer = () => (
         href="https://www.linkedin.com/in/marcelovicentegc/"
         itemProp="sameAs"
       >
-        Linkedin
+        <LinkedinIcon style={iconProps} />
       </a>
       <a
         target="_blank"
@@ -22,7 +34,7 @@ export const Footer = () => (
         href="https://medium.com/@marcelovicentegc"
         itemProp="sameAs"
       >
-        Medium
+        <MediumIcon style={iconProps} />
       </a>
       <a
         target="_blank"
@@ -30,7 +42,7 @@ export const Footer = () => (
         href="https://www.strava.com/athletes/35289893"
         itemProp="sameAs"
       >
-        Strava
+        <StravaIcon style={iconProps} />
       </a>
       <a
         target="_blank"
@@ -38,15 +50,7 @@ export const Footer = () => (
         href="https://github.com/marcelovicentegc"
         itemProp="sameAs"
       >
-        GitHub
-      </a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer me"
-        href="https://sourcerer.io/marcelovicentegc"
-        itemProp="sameAs"
-      >
-        Sourcerer
+        <GithubIcon style={iconProps} />
       </a>
       <a
         target="_blank"
@@ -54,7 +58,11 @@ export const Footer = () => (
         href="https://github.com/marcelovicentegc/marcelovicentegc.github.io"
         itemProp="sameAs"
       >
-        Source code
+        <CodeIcon
+          style={{
+            height: 15,
+          }}
+        />
       </a>
       <a
         target="_blank"
@@ -62,7 +70,7 @@ export const Footer = () => (
         href="https://stackoverflow.com/users/9317004/marcelo-cardoso?tab=profile"
         itemProp="sameAs"
       >
-        StackOverflow
+        <StackOverflowIcon style={iconProps} />
       </a>
       <a
         target="_blank"
@@ -70,7 +78,11 @@ export const Footer = () => (
         href="https://www.npmjs.com/~marcelovicentegc"
         itemProp="sameAs"
       >
-        NPM
+        <NpmIcon
+          style={{
+            width: 20,
+          }}
+        />
       </a>
     </span>
   </StyledFooter>
