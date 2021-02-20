@@ -202,9 +202,8 @@ const ProfilePage: React.FC = () => {
                   rel={"noopener norefereer"}
                 >
                   Amigo Edu (a student benefit application)
-                </a>
-                A and Cubos' institutional website, as a{" "}
-                <i>Software Engineer</i>.
+                </a>{" "}
+                and Cubos' institutional website, as a <i>Software Engineer</i>.
               </li>
             </P>
             <P fontWeight={500}>
