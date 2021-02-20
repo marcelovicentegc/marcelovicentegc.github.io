@@ -9,7 +9,11 @@ export const Spine = () => (
       </Logo>
     </a>
     <Mo fontSize={1}>
-      Salvador based Full Stack Engineer currently working at Cubos
+      Remote-based Software Engineer currently working at{" "}
+      <a href="https://vtex.com" rel={"noopener norefereer"} target={"_blank"}>
+        VTEX
+      </a>
+      .
     </Mo>
     <Flair>
       <span role="img" aria-label="rocket">

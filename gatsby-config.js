@@ -8,7 +8,7 @@ module.exports = {
     siteUrl: "https://marcelovicentegc.github.io",
     defaultTitle: "Marcelo Cardoso",
     defaultDescription:
-      "Marcelo Cardoso is a Full Stack Engineer in Salvador, building things at Cubos.",
+      "Marcelo Cardoso is a Software Engineer working remotely, and currently building things @ VTEX.",
   },
   plugins: [
     "gatsby-plugin-styled-components",

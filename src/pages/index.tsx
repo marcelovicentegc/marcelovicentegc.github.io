@@ -20,7 +20,36 @@ const HomeFeature = styled(Flex)`
   position: relative;
 `
 
-const IndexPage = ({ data }) => {
+interface Post {
+  node: {
+    frontmatter: {
+      title: string
+    }
+    excerpt: string
+    fields: {
+      slug: string
+      date: string
+    }
+  }
+}
+
+interface SiteData {
+  site: {
+    siteMetadata: {
+      defaultTitle: string
+      defaultDescription: string
+    }
+  }
+  allMarkdownRemark: {
+    edges: Post[]
+  }
+}
+
+interface Props {
+  data: SiteData
+}
+
+const IndexPage = ({ data }: Props) => {
   const meta = data.site.siteMetadata
   const { edges: posts } = data.allMarkdownRemark
   return (
@@ -33,7 +62,7 @@ const IndexPage = ({ data }) => {
         <HomeFeature py={[3, 4, 5]}>
           <Inner>
             <H1>Get shit done, at scale.</H1>
-            <P>I'm Marcelo, a Full Stack Engineer based in Salvador.</P>
+            <P>I'm Marcelo, a Software Engineer working remotely.</P>
           </Inner>
         </HomeFeature>
         <Section>
