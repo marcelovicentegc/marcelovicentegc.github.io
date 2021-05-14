@@ -2,7 +2,7 @@
 title: "Maxims from the best"
 ---
 
-> Freedom is to understand yourself, your emotions, who you are, and don't emprision yourself by "wanting to be something".
+> Freedom is to understand yourself, your emotions, who you are, and not to emprision yourself by "wanting to be something".
 >
 > Krishna Murti
 
