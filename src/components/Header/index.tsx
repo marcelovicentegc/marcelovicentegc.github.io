@@ -14,11 +14,25 @@ export default ({
   selectedTheme: ThemeMode
 }) => {
   const [currentMenuItem, setCurrentMenuItem] = React.useState<
-    "home" | "profile" | null
+    "home" | "profile" | "journal" | null
   >(null)
   React.useEffect(() => {
     if (typeof window !== "undefined") {
-      setCurrentMenuItem(window.location.pathname === "/" ? "home" : "profile")
+      const { pathname } = window.location
+
+      if (pathname === "/") {
+        setCurrentMenuItem("home")
+      } else if (pathname === "/profile" || pathname === "/profile/") {
+        setCurrentMenuItem("profile")
+      } else if (
+        pathname === "/journal" ||
+        pathname === "/journal" ||
+        pathname.includes("journal")
+      ) {
+        setCurrentMenuItem("journal")
+      } else {
+        setCurrentMenuItem(null)
+      }
     }
   }, [])
 
@@ -48,6 +62,18 @@ export default ({
                 }}
               >
                 <Link to="/profile/">Profile</Link>
+              </Text>
+            </li>
+            <li>
+              <Text
+                fontSize={[1, 2]}
+                style={{
+                  lineHeight: "1em",
+                  fontWeight:
+                    currentMenuItem === "journal" ? "bold" : "regular",
+                }}
+              >
+                <Link to="/journal/">Journal</Link>
               </Text>
             </li>
           </ul>

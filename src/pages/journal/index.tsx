@@ -1,23 +1,17 @@
+import { graphql, Link, StaticQuery } from "gatsby"
 import React from "react"
 import Helmet from "react-helmet"
 import styled from "styled-components"
-import { StaticQuery, graphql, Link } from "gatsby"
-import { Site } from "../components/Site"
-import { Text, P, H1 } from "../typography"
-import { Inner, Box, Flex } from "../components/System"
-import { Section, SectionTitle } from "../components/Section"
-import { Main } from "../components/Main"
+import { Main } from "../../components/Main"
+import { PageHeader } from "../../components/PageHeader"
+import { Section, SectionTitle } from "../../components/Section"
+import { Site } from "../../components/Site"
+import { Box, Inner } from "../../components/System"
+import { Text } from "../../typography"
 
 const PostDate = styled(Text)`
   font-size: 0.8em;
   display: block;
-`
-
-const HomeFeature = styled(Flex)`
-  align-items: center;
-  overflow: hidden;
-  background-color: ${props => props.theme.colors.primary};
-  position: relative;
 `
 
 interface Post {
@@ -49,25 +43,26 @@ interface Props {
   data: SiteData
 }
 
-const IndexPage = ({ data }: Props) => {
+function JournalPage({ data }: Props) {
   const meta = data.site.siteMetadata
   const { edges: posts } = data.allMarkdownRemark
+
   return (
     <Site>
       <Main>
-        <Helmet title={meta.defaultTitle}>
-          <meta name="twitter:title" content={meta.defaultTitle} />
-          <meta name="twitter:description" content={meta.defaultDescription} />
+        <Helmet title={`${meta.defaultTitle}'s journal`}>
+          <meta
+            name="twitter:title"
+            content={`${meta.defaultTitle}'s journal`}
+          />
+          <meta
+            name="twitter:description"
+            content={`Journal - ${meta.defaultDescription}`}
+          />
         </Helmet>
-        <HomeFeature py={[3, 4, 5]}>
-          <Inner>
-            <H1>Get shit done, at scale.</H1>
-            <P>I'm Marcelo, a Software Engineer working remotely.</P>
-          </Inner>
-        </HomeFeature>
-        <Section>
-          <Inner>
-            <SectionTitle>Journal</SectionTitle>
+        <PageHeader title="Journal" />
+        <Inner>
+          <Section>
             {posts
               .filter(post => post.node.frontmatter.title.length > 0)
               .map(({ node: post }) => (
@@ -88,8 +83,8 @@ const IndexPage = ({ data }: Props) => {
                   </Text>
                 </Box>
               ))}
-          </Inner>
-        </Section>
+          </Section>
+        </Inner>
       </Main>
     </Site>
   )
@@ -98,7 +93,7 @@ const IndexPage = ({ data }: Props) => {
 export default () => (
   <StaticQuery
     query={graphql`
-      query IndexQuery {
+      query JournalQuery {
         site {
           siteMetadata {
             defaultTitle
@@ -122,6 +117,6 @@ export default () => (
         }
       }
     `}
-    render={data => <IndexPage data={data} />}
+    render={data => <JournalPage data={data} />}
   />
 )

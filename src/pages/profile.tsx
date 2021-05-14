@@ -39,7 +39,7 @@ interface SiteData {
 
 interface Data extends SiteData, GithubData {}
 
-const ProfilePage: React.FC = () => {
+const ProfilePage = () => {
   const data: Data = useStaticQuery(graphql`
     query ProfileQueryAndGetRepositories {
       github {
@@ -72,10 +72,10 @@ const ProfilePage: React.FC = () => {
   return (
     <Site>
       <main>
-        <Helmet title={`Profile - ${meta.defaultTitle}`}>
+        <Helmet title={`${meta.defaultTitle}'s profile`}>
           <meta
             name="twitter:title"
-            content={`Profile - ${meta.defaultTitle}`}
+            content={`${meta.defaultTitle}'s profile`}
           />
           <meta name="twitter:description" content={meta.defaultDescription} />
         </Helmet>
@@ -299,6 +299,18 @@ const ProfilePage: React.FC = () => {
                 here
               </a>
               .
+            </P>
+          </Section>
+          <Section>
+            <SectionTitle>Talks</SectionTitle>
+            <P>
+              <a
+                href={"https://www.youtube.com/watch?v=17Qp30Zqevk"}
+                rel={"noopener norefereer"}
+                target={"_blank"}
+              >
+                VTEX Summer Internship for Software Engineers
+              </a>
             </P>
           </Section>
           <Section>
