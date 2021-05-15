@@ -2,6 +2,12 @@
 title: "Maxims from the best"
 ---
 
+> Never blame yourself for being too kind.
+>
+> _Yasmin Santana_
+
+---
+
 > Easy choices, hard life. Hard choices, easy life.
 >
 > _Jerzy Gregorek_
