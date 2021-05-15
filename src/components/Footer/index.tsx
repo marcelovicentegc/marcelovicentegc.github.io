@@ -7,6 +7,7 @@ import { MediumIcon } from "../../assets/icons/medium"
 import { NpmIcon } from "../../assets/icons/npm"
 import { StravaIcon } from "../../assets/icons/strava"
 import { CodeIcon } from "../../assets/icons/branch"
+import { DuolingoIcon } from "../../assets/icons/duolingo"
 
 const CURRENT_YEAR = new Date().getFullYear()
 
@@ -83,6 +84,14 @@ export const Footer = () => (
             width: 20,
           }}
         />
+      </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.duolingo.com/profile/marcelovicentegc"
+        itemProp="sameAs"
+      >
+        <DuolingoIcon style={iconProps} />
       </a>
     </span>
   </StyledFooter>
