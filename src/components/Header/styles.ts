@@ -23,9 +23,7 @@ export const Nav = styled(Box)`
       display: inline-block;
       padding: 0 8px;
 
-      &:first-of-type {
-        padding-left: 0;
-      }
+      padding-left: 0;
     }
   }
 

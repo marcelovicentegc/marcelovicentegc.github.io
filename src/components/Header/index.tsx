@@ -5,6 +5,9 @@ import { Text } from "../../typography"
 import { Inner } from "../System"
 import { StyledSwitch } from "../ThemeSwitch"
 import { ThemeMode } from "../../styles/theme"
+import Search from "../Search"
+
+const searchIndices = [{ excerpt: "", title: "", slug: "" }]
 
 export default ({
   onThemeChange,
@@ -77,7 +80,20 @@ export default ({
               </Text>
             </li>
           </ul>
-          <StyledSwitch value={selectedTheme} onClick={onThemeChange} />
+          <ul
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <li>
+              <Search indices={searchIndices} />
+            </li>
+            <li>
+              <StyledSwitch value={selectedTheme} onClick={onThemeChange} />
+            </li>
+          </ul>
         </Nav>
       </Inner>
     </StyledNav>
