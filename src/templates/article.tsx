@@ -6,7 +6,6 @@ import { PageHeader } from "../components/PageHeader"
 import { Inner } from "../components/System"
 import { Alert } from "../components/Alert"
 import { Markdown } from "../components/Markdown"
-import { FollowButton } from "../components/FollowButton"
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
@@ -45,7 +44,6 @@ export default function Template({ data }) {
               id="top"
               className="content"
             />
-            <FollowButton mt={1} />
           </Inner>
         </article>
       </main>

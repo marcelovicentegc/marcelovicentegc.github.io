@@ -2,9 +2,15 @@
 title: "Maxims from the best"
 ---
 
+> Easy choices, hard life. Hard choices, easy life.
+>
+> _Jerzy Gregorek_
+
+---
+
 > Freedom is to understand yourself, your emotions, who you are, and not to emprision yourself by "wanting to be something".
 >
-> Krishna Murti
+> _Krishna Murti_
 
 ---
 
@@ -16,24 +22,22 @@ title: "Maxims from the best"
 > - Must it be done right, or we do an approximate version and fix it later?
 > - What are the behavioral norms in terms of honesty and sharing and forthrightness?
 >
-> Reed Hastings
+> _Reed Hastings_
 
 ---
 
 > Don't criticize, condene or complain about others. If you know something good about someone, say it to others.
 >
-> Dale Carnegie
+> _Dale Carnegie_
 
 ---
 
 > Make money with your mind, not with your time... Product leverage is the key for wealth.
 >
-> Naval Ravikant
+> _Naval Ravikant_
 
 ---
 
 > The hard path is the unlearning path, the path where you start from the bottom of the mountain, in which you realize that in order to enjoy your full potential, you need to start from zero.
 >
-> Naval Ravikant
-
----
+> _Naval Ravikant_
