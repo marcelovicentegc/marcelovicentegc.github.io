@@ -11,4 +11,4 @@ deploy:
   script: npm ci && npm run deploy
   skip_cleanup: true
   on:
-    branch: master-source
+    branch: main
