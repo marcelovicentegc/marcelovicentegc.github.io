@@ -20,7 +20,6 @@ const HTML: React.SFC<HTMLProps> = ({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href={favicon} />
         <meta name="theme-color" content="#121212" />
-        <meta name="author" content="Marcelo Cardoso" />
         {headComponents}
       </head>
       <body>

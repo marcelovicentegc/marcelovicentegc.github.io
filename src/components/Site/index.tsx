@@ -18,16 +18,21 @@ export class Site extends React.Component<SiteProps, SiteState> {
   public constructor(props: SiteProps) {
     super(props)
 
-    if (
-      typeof window !== "undefined" &&
-      window?.localStorage?.getItem("theme")
-    ) {
-      this.state = {
-        selectedTheme: JSON.parse(window!.localStorage!.getItem("theme")!),
+    if (typeof window !== "undefined") {
+      if (process.env.NODE_ENV === "production") {
+        if (window.location.hostname !== "marcelo.page") {
+          window.location.href = "marcelo.page"
+        }
       }
-    } else {
-      this.state = {
-        selectedTheme: "light",
+
+      if (window?.localStorage?.getItem("theme")) {
+        this.state = {
+          selectedTheme: JSON.parse(window!.localStorage!.getItem("theme")!),
+        }
+      } else {
+        this.state = {
+          selectedTheme: "light",
+        }
       }
     }
 
