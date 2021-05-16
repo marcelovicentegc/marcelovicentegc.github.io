@@ -8,6 +8,7 @@ import { NpmIcon } from "../../assets/icons/npm"
 import { StravaIcon } from "../../assets/icons/strava"
 import { CodeIcon } from "../../assets/icons/branch"
 import { DuolingoIcon } from "../../assets/icons/duolingo"
+import { MapIcon } from "../../assets/icons/map"
 
 const CURRENT_YEAR = new Date().getFullYear()
 
@@ -100,6 +101,14 @@ export const Footer = () => (
         title="Strava profile"
       >
         <StravaIcon style={iconProps} />
+      </a>
+      <a
+        rel="noopener noreferrer me"
+        href="/map"
+        itemProp="sameAs"
+        title="My map"
+      >
+        <MapIcon style={iconProps} />
       </a>
     </span>
   </StyledFooter>

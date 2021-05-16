@@ -6,9 +6,8 @@
   "dependencies": {
     "@rebass/components": "^4.0.0-1",
     "algoliasearch": "^4.9.1",
-    "gatsby": "^2.18.7",
     "deep-equal": "^2.0.5",
-    "lodash.chunk": "^4.2.0",
+    "gatsby": "^2.18.7",
     "gatsby-plugin-catch-links": "^2.1.19",
     "gatsby-plugin-google-analytics": "^2.1.29",
     "gatsby-plugin-react-helmet": "^3.1.16",
@@ -21,6 +20,8 @@
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-source-graphql": "^2.1.20",
     "gatsby-transformer-remark": "^2.6.39",
+    "lodash.chunk": "^4.2.0",
+    "maplibre-gl": "^1.14.0",
     "prismjs": "^1.23.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -30,6 +31,7 @@
     "styled-components": "^4.4.1"
   },
   "devDependencies": {
+    "@types/maplibre-gl": "^1.13.1",
     "@types/react-helmet": "^5.0.15",
     "@types/react-instantsearch-dom": "^6.10.0",
     "@types/rebass": "^4.0.4",
