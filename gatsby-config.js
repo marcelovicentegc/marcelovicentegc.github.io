@@ -1,16 +1,19 @@
 require("dotenv").config()
 
+const description =
+  "Marcelo Cardoso is a Brazilian Software Engineer working remotely, and currently building things @ VTEX."
+
+const title = "Marcelo Cardoso"
+
 module.exports = {
   pathPrefix: `/`,
   siteMetadata: {
-    author: "Marcelo Cardoso",
-    title: "Marcelo Cardoso",
+    author: title,
+    title,
     siteUrl: "https://marcelo.page",
-    defaultTitle: "Marcelo Cardoso",
-    description:
-      "Marcelo Cardoso is a brazilian Software Engineer working remotely, and currently building things @ VTEX.",
-    defaultDescription:
-      "Marcelo Cardoso is a brazilian Software Engineer working remotely, and currently building things @ VTEX.",
+    defaultTitle: title,
+    description,
+    defaultDescription: description,
   },
   plugins: [
     "gatsby-plugin-styled-components",

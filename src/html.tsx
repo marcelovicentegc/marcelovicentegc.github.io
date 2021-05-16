@@ -19,7 +19,24 @@ const HTML: React.SFC<HTMLProps> = ({
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href={favicon} />
+        {/* Primary Meta Tags */}
         <meta name="theme-color" content="#121212" />
+        <meta
+          name="description"
+          content="Marcelo Cardoso is a Brazilian Software Engineer working remotely, and
+          currently building things @ VTEX."
+        />
+        <meta name="title" content="Marcelo Cardoso" />
+        <title>Marcelo Cardoso</title>
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://marcelo.page/" />
+        <meta
+          property="og:title"
+          content="Marcelo Cardoso is a Brazilian Software Engineer working remotely, and
+          currently building things @ VTEX."
+        />
+        <meta property="og:image" content="images/og.jpeg" />
         {headComponents}
       </head>
       <body>
