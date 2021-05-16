@@ -4,5 +4,6 @@
 <url> <loc>https://marcelo.page/journal/maxims-from-the-best/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marcelo.page/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marcelo.page/journal/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marcelo.page/map/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marcelo.page/profile/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
