@@ -1,6 +1,6 @@
 language: node_js
 before_script:
-  - npm install -g gatsby-cli
+  - npm install -g gatsby-cli gh-pages
 node_js:
   - "14"
 build:
@@ -8,7 +8,7 @@ build:
   script: npm ci && npm run build
 deploy:
   provider: script
-  script: npm ci && npm i gh-pages && npm run deploy
+  script: npm ci && npm run deploy
   skip_cleanup: true
   on:
     branch: main
