@@ -33,7 +33,7 @@ export class Site extends React.Component<SiteProps, SiteState> {
         }
       }
 
-      if (process.env.NODE_ENV === "production") {
+      if (process.env.GATSBY_NODE_ENV === "production") {
         if (window.location.hostname !== "marcelo.page") {
           window.location.href = `https://marcelo.page${window.location.pathname}`
         }

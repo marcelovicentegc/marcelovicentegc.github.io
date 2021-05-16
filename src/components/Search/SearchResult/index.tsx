@@ -6,6 +6,7 @@ import {
   Hits,
   Index,
   Snippet,
+  PoweredBy,
 } from "react-instantsearch-dom"
 import styled, { css } from "styled-components"
 import { Index as SearchIndex } from "../types"
@@ -40,6 +41,7 @@ const SearchResult = ({ indices, className }: SearchResultProps) => (
         />
       </Index>
     ))}
+    <PoweredBy />
   </div>
 )
 
@@ -93,6 +95,11 @@ export default styled(SearchResult)<{ show: boolean }>`
     display: flex;
     justify-content: flex-end;
     font-size: 80%;
+    align-items: center;
+
+    span {
+      margin-right: 0.5rem;
+    }
 
     svg {
       width: 70px;
