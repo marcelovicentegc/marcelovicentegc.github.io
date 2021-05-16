@@ -18,8 +18,12 @@ export class Site extends React.Component<SiteProps, SiteState> {
   public constructor(props: SiteProps) {
     super(props)
 
+    this.state = {
+      selectedTheme: "light",
+    }
+
     if (typeof window !== "undefined") {
-      if (window?.localStorage?.getItem("theme")) {
+      if (window.localStorage?.getItem("theme")) {
         this.state = {
           selectedTheme: JSON.parse(window!.localStorage!.getItem("theme")!),
         }
