@@ -4,11 +4,13 @@ module.exports = {
   pathPrefix: `/`,
   siteMetadata: {
     author: "Marcelo Cardoso",
-    title: `marcelovicentegc.github.io`,
-    siteUrl: "https://marcelovicentegc.github.io",
+    title: "Marcelo Cardoso",
+    siteUrl: "https://marcelo.page",
     defaultTitle: "Marcelo Cardoso",
+    description:
+      "Marcelo Cardoso is a brazilian Software Engineer working remotely, and currently building things @ VTEX.",
     defaultDescription:
-      "Marcelo Cardoso is a Software Engineer working remotely, and currently building things @ VTEX.",
+      "Marcelo Cardoso is a brazilian Software Engineer working remotely, and currently building things @ VTEX.",
   },
   plugins: [
     "gatsby-plugin-styled-components",
