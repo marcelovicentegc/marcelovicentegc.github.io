@@ -19,12 +19,6 @@ export class Site extends React.Component<SiteProps, SiteState> {
     super(props)
 
     if (typeof window !== "undefined") {
-      if (process.env.NODE_ENV === "production") {
-        if (window.location.hostname !== "marcelo.page") {
-          window.location.href = "marcelo.page"
-        }
-      }
-
       if (window?.localStorage?.getItem("theme")) {
         this.state = {
           selectedTheme: JSON.parse(window!.localStorage!.getItem("theme")!),
@@ -32,6 +26,12 @@ export class Site extends React.Component<SiteProps, SiteState> {
       } else {
         this.state = {
           selectedTheme: "light",
+        }
+      }
+
+      if (process.env.NODE_ENV === "production") {
+        if (window.location.hostname !== "marcelo.page") {
+          window.location.href = `https://marcelo.page${window.location.pathname}`
         }
       }
     }
