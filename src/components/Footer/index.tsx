@@ -26,30 +26,16 @@ export const Footer = () => (
         rel="noopener noreferrer me"
         href="https://www.linkedin.com/in/marcelovicentegc/"
         itemProp="sameAs"
+        title="Linkedin profile"
       >
         <LinkedinIcon style={iconProps} />
       </a>
       <a
         target="_blank"
         rel="noopener noreferrer me"
-        href="https://medium.com/@marcelovicentegc"
-        itemProp="sameAs"
-      >
-        <MediumIcon style={iconProps} />
-      </a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer me"
-        href="https://www.strava.com/athletes/35289893"
-        itemProp="sameAs"
-      >
-        <StravaIcon style={iconProps} />
-      </a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer me"
         href="https://github.com/marcelovicentegc"
         itemProp="sameAs"
+        title="Github profile"
       >
         <GithubIcon style={iconProps} />
       </a>
@@ -58,6 +44,7 @@ export const Footer = () => (
         rel="noopener noreferrer"
         href="https://github.com/marcelovicentegc/marcelovicentegc.github.io"
         itemProp="sameAs"
+        title="This site's source code"
       >
         <CodeIcon
           style={{
@@ -70,6 +57,7 @@ export const Footer = () => (
         rel="noopener noreferrer"
         href="https://stackoverflow.com/users/9317004/marcelo-cardoso?tab=profile"
         itemProp="sameAs"
+        title="StackOverflow profile"
       >
         <StackOverflowIcon style={iconProps} />
       </a>
@@ -78,6 +66,7 @@ export const Footer = () => (
         rel="noopener noreferrer"
         href="https://www.npmjs.com/~marcelovicentegc"
         itemProp="sameAs"
+        title="NPM profile"
       >
         <NpmIcon
           style={{
@@ -90,8 +79,27 @@ export const Footer = () => (
         rel="noopener noreferrer"
         href="https://www.duolingo.com/profile/marcelovicentegc"
         itemProp="sameAs"
+        title="Duolingo profile"
       >
         <DuolingoIcon style={iconProps} />
+      </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer me"
+        href="https://medium.com/@marcelovicentegc"
+        itemProp="sameAs"
+        title="Medium profile"
+      >
+        <MediumIcon style={iconProps} />
+      </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer me"
+        href="https://www.strava.com/athletes/35289893"
+        itemProp="sameAs"
+        title="Strava profile"
+      >
+        <StravaIcon style={iconProps} />
       </a>
     </span>
   </StyledFooter>
