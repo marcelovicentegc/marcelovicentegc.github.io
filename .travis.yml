@@ -8,7 +8,7 @@ build:
   script: npm ci && npm run build
 deploy:
   provider: script
-  script: npm ci && npm run deploy
+  script: npm ci && npm i gh-pages && npm run deploy
   skip_cleanup: true
   on:
     branch: main
