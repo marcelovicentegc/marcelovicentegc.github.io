@@ -336,10 +336,11 @@ const ProfilePage = () => {
             <SectionTitle>Resume</SectionTitle>
             <Text>
               <a
-                href="https://stackoverflow.com/users/story/pdf/9317004?View=Pdf"
+                href="https://stackoverflow.com/cv/marcelovicentegc"
                 rel={"noopener norefereer"}
+                target={"_blank"}
               >
-                Download as PDF
+                Check out my curriculum
               </a>
             </Text>
           </Section>
