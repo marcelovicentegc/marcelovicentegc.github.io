@@ -52,6 +52,10 @@ title: "Maxims from the best"
 
 ### Miscellaneous
 
+> The future is already here - it's just not evenly distributed.
+>
+> _William Gibson_
+
 > Use context, not control. Inspire and lead people - don't micro-manage them - through setting the context.
 >
 > - What are we trying to do?
