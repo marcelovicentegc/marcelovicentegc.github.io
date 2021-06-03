@@ -26,6 +26,22 @@ title: "Maxims from the best"
 
 ---
 
+### Inner peace
+
+> Learning to ignore things is one of the great paths to inner peace.
+>
+> _Robert J. Sawyer_
+
+---
+
+### Owe
+
+> No one owes you anything.
+>
+> _Amelia Boone_
+
+---
+
 ### Kindness
 
 > Never blame yourself for being too kind.
