@@ -12,13 +12,13 @@ title: "Maxims from the best"
 
 ### Choices
 
-> Whenever there is any doubt, there is no doubt.
->
-> _David Mamet_
-
 > Easy choices, hard life. Hard choices, easy life.
 >
 > _Jerzy Gregorek_
+
+> Whenever there is any doubt, there is no doubt.
+>
+> _David Mamet_
 
 > The hard path is the unlearning path, the path where you start from the bottom of the mountain, in which you realize that in order to enjoy your full potential, you need to start from zero.
 >
@@ -67,6 +67,10 @@ title: "Maxims from the best"
 ---
 
 ### Miscellaneous
+
+> A man who dares to waste one hour of time has not discovered the value of life.
+>
+> _Charles Darwin_
 
 > The future is already here - it's just not evenly distributed.
 >
