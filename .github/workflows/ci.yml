@@ -19,6 +19,8 @@ jobs:
         run: |
           npm install
           npm run build
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       - name: run Lighthouse CI
         run: |
           npm run test:lh:ci
