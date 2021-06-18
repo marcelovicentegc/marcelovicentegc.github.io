@@ -2,6 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import { graphql, useStaticQuery } from "gatsby"
 import { Site } from "../components/Site"
+import { Main } from "../components/Main"
 import { PageHeader } from "../components/PageHeader"
 import { Inner } from "../components/System"
 import { Section } from "../components/Section"
@@ -31,7 +32,7 @@ const MapPage = () => {
 
   return (
     <Site>
-      <main>
+      <Main>
         <Helmet title={`${meta.defaultTitle}'s map`}>
           <meta name="twitter:title" content={`${meta.defaultTitle}'s map`} />
           <meta name="twitter:description" content={meta.defaultDescription} />
@@ -56,7 +57,7 @@ const MapPage = () => {
             />
           </Section>
         </Inner>
-      </main>
+      </Main>
     </Site>
   )
 }
