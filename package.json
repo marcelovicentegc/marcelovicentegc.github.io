@@ -30,6 +30,7 @@
     "styled-components": "^4.4.1"
   },
   "devDependencies": {
+    "@lhci/cli": "^0.8.0",
     "@types/react-helmet": "^5.0.15",
     "@types/react-instantsearch-dom": "^6.10.0",
     "@types/rebass": "^4.0.4",
@@ -65,6 +66,8 @@
     "build": "gatsby build",
     "start": "rimraf public && rimraf .cache && gatsby develop",
     "start:tunnel": "rimraf public && rimraf .cache && gatsby develop -H 0.0.0.0",
+    "serve": "gatsby build && gatsby serve --host=0.0.0.0",
+    "test:lh:ci": "lhci autorun",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "lint": "eslint src",
     "check": "tsc --noEmit",
