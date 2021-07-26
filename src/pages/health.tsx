@@ -144,10 +144,6 @@ export type BarStackHorizontalProps = {
   events?: boolean
 }
 
-const purple1 = "#6c5efb"
-const purple2 = "#c998ff"
-export const purple3 = "#a44afe"
-export const background = "#eaedff"
 const defaultMargin = { top: 40, left: 50, right: 40, bottom: 100 }
 const tooltipStyles = {
   ...defaultStyles,
@@ -184,10 +180,6 @@ const dateScale = scaleBand<string>({
   domain: data.map(getDate),
   padding: 0.2,
 })
-const colorScale = scaleOrdinal<string, string>({
-  domain: keys,
-  range: [purple1, purple2, purple3],
-})
 
 let tooltipTimeout: number
 
@@ -207,6 +199,27 @@ const Chart = withTooltip<BarStackHorizontalProps, TooltipData>(
     // bounds
     const xMax = width - margin.left - margin.right
     const yMax = height - margin.top - margin.bottom
+
+    const stroke = "#000"
+    const background = "#e7e2e2"
+
+    const colorScale = scaleOrdinal<string, string>({
+      domain: keys,
+      range: [
+        "#2E2E2D",
+        "#41413F",
+        "#545351",
+        "#666563",
+        "#797775",
+        "#8B8987",
+        "#9D9B99",
+        "#B0ADAC",
+        "#C2BEBE",
+        "#D5D0D0",
+        "#e7e2e2",
+        "#F6F3F5",
+      ],
+    })
 
     temperatureScale.rangeRound([0, xMax])
     dateScale.rangeRound([yMax, 0])
@@ -263,10 +276,10 @@ const Chart = withTooltip<BarStackHorizontalProps, TooltipData>(
               hideTicks
               scale={dateScale}
               tickFormat={formatDate}
-              stroke={purple3}
-              tickStroke={purple3}
+              stroke={stroke}
+              tickStroke={stroke}
               tickLabelProps={() => ({
-                fill: purple3,
+                fill: stroke,
                 fontSize: 11,
                 textAnchor: "end",
                 dy: "0.33em",
@@ -275,10 +288,10 @@ const Chart = withTooltip<BarStackHorizontalProps, TooltipData>(
             <AxisBottom
               top={yMax}
               scale={temperatureScale}
-              stroke={purple3}
-              tickStroke={purple3}
+              stroke={stroke}
+              tickStroke={stroke}
               tickLabelProps={() => ({
-                fill: purple3,
+                fill: stroke,
                 fontSize: 11,
                 textAnchor: "middle",
               })}
