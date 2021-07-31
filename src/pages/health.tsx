@@ -124,6 +124,19 @@ const data: BioImpedanceData[] = [
     boneMass: 2.79,
     bodyAge: 22,
   },
+  {
+    date: "2021-07-30",
+    weigth: 63.75,
+    bmi: 20.8,
+    bodyFat: 15.2,
+    muscle: 51.33,
+    water: 58.2,
+    protein: 22.3,
+    basalMetabolism: 1.477,
+    visceralFat: 5,
+    boneMass: 2.75,
+    bodyAge: 23,
+  },
 ]
 
 type TooltipData = {
@@ -205,6 +218,7 @@ const Chart = withTooltip<BarStackHorizontalProps, TooltipData>(
 
     const colorScale = scaleOrdinal<string, string>({
       domain: keys,
+      // https://hihayk.github.io/scale/#10/1/80/60/-50/50/20/50/e7e2e2/231/226/226/l-2
       range: [
         "#2E2E2D",
         "#41413F",
