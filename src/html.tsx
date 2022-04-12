@@ -1,5 +1,5 @@
 import React from "react"
-import favicon from "./assets/favicon.png"
+import favicon from "./assets/favicon.ico"
 
 interface HTMLProps {
   headComponents: React.ReactNode

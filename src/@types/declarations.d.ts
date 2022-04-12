@@ -17,3 +17,9 @@ declare module "*.png" {
   const filePath: string
   export = filePath
 }
+
+
+declare module "*.ico" {
+  const filePath: string
+  export = filePath
+}

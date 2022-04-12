@@ -1,7 +1,7 @@
 require("dotenv").config()
 
 const description =
-  "Marcelo Cardoso is a Brazilian Software Engineer working remotely, and currently building things @ VTEX."
+  "Marcelo Cardoso is a Brazilian Software Engineer working remotely, currently building things @ VTEX."
 
 const title = "Marcelo Cardoso"
 
@@ -14,6 +14,7 @@ module.exports = {
     defaultTitle: title,
     description,
     defaultDescription: description,
+    image: 'images/og.jpeg'
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -53,7 +54,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "UA-128443240-3",
+        trackingId: "G-1C44N0TJ40",
+        enableWebVitalsTracking: true,
       },
     },
     "gatsby-plugin-react-helmet",
