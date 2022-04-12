@@ -5,11 +5,13 @@ title: "Maxims from the best"
 ### Efficiency
 
 > It is vain to do with more what can be done with less.
+> 
 > _William of Occam_
 
 ### Friendship
 
 > [...] the ultimate touchstone of friendship is not improvement, neither of the other nor of the self; the ultimate touchstone is witness, the privilege of having been seen by someone and the equal privilege of being granted the sight of the essence of another, to have walked with them and to have believed in them, and sometimes just to have accompanied them for however brief a span, on a journey impossible to accomplish alone.
+> 
 > _David Whyte_
 
 ---
