@@ -1,5 +1,5 @@
 ---
-title: "Maxims from the best"
+title: "Maxims from the best #1"
 ---
 
 ### Efficiency
