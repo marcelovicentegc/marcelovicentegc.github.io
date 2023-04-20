@@ -21,7 +21,7 @@
     "gatsby-plugin-catch-links": "^2.1.19",
     "gatsby-plugin-google-analytics": "^2.1.29",
     "gatsby-plugin-react-helmet": "^3.1.16",
-    "gatsby-plugin-sharp": "^2.3.5",
+    "gatsby-plugin-sharp": "^4.25.1",
     "gatsby-plugin-sitemap": "^2.2.22",
     "gatsby-plugin-styled-components": "^3.1.14",
     "gatsby-plugin-typescript": "^2.3.1",
