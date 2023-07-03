@@ -3,12 +3,7 @@ import { StyledFooter } from "./styles"
 import { LinkedinIcon } from "../../assets/icons/linkedin"
 import { GithubIcon } from "../../assets/icons/github"
 import { StackOverflowIcon } from "../../assets/icons/stackOverflow"
-import { MediumIcon } from "../../assets/icons/medium"
-import { NpmIcon } from "../../assets/icons/npm"
-import { StravaIcon } from "../../assets/icons/strava"
 import { CodeIcon } from "../../assets/icons/branch"
-import { DuolingoIcon } from "../../assets/icons/duolingo"
-import { MapIcon } from "../../assets/icons/map"
 
 const CURRENT_YEAR = new Date().getFullYear()
 
@@ -61,54 +56,6 @@ export const Footer = () => (
         title="StackOverflow profile"
       >
         <StackOverflowIcon style={iconProps} />
-      </a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.npmjs.com/~marcelovicentegc"
-        itemProp="sameAs"
-        title="NPM profile"
-      >
-        <NpmIcon
-          style={{
-            width: 20,
-          }}
-        />
-      </a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.duolingo.com/profile/marcelovicentegc"
-        itemProp="sameAs"
-        title="Duolingo profile"
-      >
-        <DuolingoIcon style={iconProps} />
-      </a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer me"
-        href="https://medium.com/@marcelovicentegc"
-        itemProp="sameAs"
-        title="Medium profile"
-      >
-        <MediumIcon style={iconProps} />
-      </a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer me"
-        href="https://www.strava.com/athletes/35289893"
-        itemProp="sameAs"
-        title="Strava profile"
-      >
-        <StravaIcon style={iconProps} />
-      </a>
-      <a
-        rel="noopener noreferrer me"
-        href="/map"
-        itemProp="sameAs"
-        title="My map"
-      >
-        <MapIcon style={iconProps} />
       </a>
     </span>
   </StyledFooter>

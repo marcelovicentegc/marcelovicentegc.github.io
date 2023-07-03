@@ -7,7 +7,7 @@ interface HTMLProps {
   postBodyComponents: React.ReactNode
 }
 
-const HTML: React.SFC<HTMLProps> = ({
+const HTML: React.FC<HTMLProps> = ({
   headComponents,
   body,
   postBodyComponents,
