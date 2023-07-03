@@ -60,6 +60,7 @@
     "gh-pages": "^5.0.0",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.2",
+    "semantic-release": "^21.0.6",
     "typescript": "^3.8.3"
   },
   "keywords": [
@@ -84,6 +85,8 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "lint": "eslint src",
     "check": "tsc --noEmit",
+    "semantic-release": "semantic-release",
+    "semantic-release:dry-run": "semantic-release --dry-run",
     "deploy": "gatsby build && gh-pages -d public -b master -r https://$GH_TOKEN@github.com/marcelovicentegc/marcelovicentegc.github.io.git",
     "all": "npm run build && npm run format && npm run lint && npm run check"
   },
