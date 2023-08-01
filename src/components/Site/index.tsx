@@ -23,13 +23,10 @@ export class Site extends React.Component<SiteProps, SiteState> {
     }
 
     if (typeof window !== "undefined") {
-      if (window.localStorage?.getItem("theme")) {
+      const theme = window.localStorage.getItem("theme")
+      if (theme) {
         this.state = {
-          selectedTheme: JSON.parse(window!.localStorage!.getItem("theme")!),
-        }
-      } else {
-        this.state = {
-          selectedTheme: "light",
+          selectedTheme: JSON.parse(theme),
         }
       }
 

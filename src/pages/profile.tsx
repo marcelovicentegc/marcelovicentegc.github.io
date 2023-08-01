@@ -108,14 +108,97 @@ const ProfilePage = () => {
               commerce transformation of complex operations.{" "}
             </P>
             <P>
-              <a
-                href="https://careers.vtex.com/"
-                target="_blank"
-                rel={"noopener norefereer"}
-              >
-                Join us!
-              </a>
+              While at VTEX, I was responsible for:
+              <br />
+              <b>
+                <i>Shipping customer-facing features</i>
+              </b>
+              <li>
+                Developing and maintaining the new Admin version, the main
+                touchpoint with the merchants, where clients configure and
+                manage everything related to their commerce operations - a key
+                product for VTEX to penetrate the global market even further -
+                as a <i>Software Engineer</i> and{" "}
+                <i>Senior Software Engineer</i>.
+              </li>
+              <li>
+                Developing key features for the new Admin such as a Global
+                Search.
+              </li>
+              <b>
+                <i>Shipping developer-facing features (DX)</i>
+              </b>
+              <li>
+                Developing and maintaining several internal tools tailored to
+                increase developers and product managers' performance, such as a
+                CLI to automate boring tasks executed by both roles and another
+                one that increased developer productivity by 5x.
+              </li>
+              <li>
+                Developing several components for the new Admin's UI library and
+                design system.
+              </li>
+              <b>
+                <i>Shipping Observability</i>
+              </b>
+              <li>
+                Instrumented several systems to collect data and generate
+                insights and measure SLOs. Splunk, Grafana, Prometheus and
+                Honeycomb are some of the used to achieve that. Created alarms
+                and dashboards to monitor the health of the systems.
+              </li>
+              <li>
+                Developing and maintaining a microservice to ingest
+                observability data from frontend applications. This microservice
+                allowed several teams to have a better understanding of their
+                applications' performance and to make data-driven decisions to
+                improve their products.
+              </li>
+              <b>
+                <i>Discoveries</i>
+              </b>
+              <li>
+                Researching micro-frontend architecture strategies and
+                initiatives that generated insights into the future of the
+                VTEX's Admin. A Github organization with POCs was created on one
+                of those discovery iterations and is available at:
+                https://github.com/micro-frontend-frameworks.
+              </li>
+              <li>
+                <i>
+                  "Marcelo built most of the MVP for the new Admin Shell outside
+                  Render Framework. It's a complex project involving a
+                  completely new framework, and finding solutions to auth
+                  integration problems, among other things. For example, he
+                  built a way to develop locally that hides a lot of
+                  complexities on how auth is integrated. He also managed to
+                  create, on his own, a CloudFront distribution to integrate
+                  with VTEX's login system, which is very tricky to achieve. It
+                  was great to come back from vacation and see all that already
+                  working"
+                </i>
+                . - Maíra Belo, Staff Software Engineer
+              </li>
+              <li>
+                Created a micro-service integrated with OpenAI that used
+                Langchain integrated with VTEX's knowledge base content, to
+                generate helpful instructions to users visiting the new Admin.
+                This discovery explored the capabilites of the GPT-4 model into
+                VTEX's Admin.
+              </li>
+              <b>
+                <i>Being a player</i>
+              </b>
+              <li>
+                Documented and tested large portions of the codebases I worked
+                upon, reducing technical debt.
+              </li>
+              <li>
+                Providing support for internal systems as well as helping
+                external teams with products related to ours.
+              </li>
             </P>
+
             <P fontWeight={500}>
               <b>Cubos (2019 - 2021)</b>
             </P>
