@@ -1,0 +1,43 @@
+{
+    "workbench.preferredDarkColorTheme" : "GitHub Dark Default",
+    "window.autoDetectColorScheme" : true,
+    "editor.tabSize" : 2,
+    "explorer.confirmDragAndDrop" : false,
+    "liveshare.authenticationProvider" : "GitHub",
+    "editor.renderLineHighlight" : "gutter",
+    "workbench.editorAssociations" : {
+      "*.ipynb" : "jupyter-notebook"
+    },
+    "workbench.preferredLightColorTheme" : "GitHub Dark Dimmed",
+    "workbench.colorTheme" : "GitHub Dark Default",
+    "workbench.iconTheme" : "material-icon-theme",
+    "editor.rulers" : [
+  
+    ],
+    "[typescript]" : {
+      "editor.defaultFormatter" : "esbenp.prettier-vscode"
+    },
+    "editor.suggestSelection" : "first",
+    "editor.accessibilitySupport" : "off",
+    "editor.parameterHints.enabled" : false,
+    "explorer.confirmDelete" : false,
+    "workbench.startupEditor" : "newUntitledFile",
+    "[go]" : {
+      "editor.codeActionsOnSave" : {
+        "source.organizeImports" : true
+      },
+      "editor.defaultFormatter" : "golang.go",
+      "editor.formatOnSave" : true,
+      "editor.insertSpaces" : false
+    },
+    "vsintellicode.modify.editor.suggestSelection" : "automaticallyOverrodeDefaultValue",
+    "editor.formatOnSave" : true,
+    "notebook.cellToolbarLocation" : {
+      "default" : "right",
+      "jupyter-notebook" : "left"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[astro]": {
+      "editor.defaultFormatter": "astro-build.astro-vscode"
+    }
+  }
