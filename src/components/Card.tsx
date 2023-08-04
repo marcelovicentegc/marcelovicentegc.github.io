@@ -25,8 +25,8 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
           </h3>
         )}
       </a>
-      <Datetime datetime={pubDatetime} />
-      <p>{description}</p>
+      {pubDatetime ? <Datetime datetime={pubDatetime} /> : null}
+      <p dangerouslySetInnerHTML={{ __html: description }} />
     </li>
   );
 }
