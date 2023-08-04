@@ -3,9 +3,8 @@ import type { Site, SocialObjects } from "./types";
 export const SITE: Site = {
   website: "https://marcelovicentegc.com/",
   author: "Marcelo Cardoso",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
+  desc: "A versatile software engineer and code crafter.",
   title: "@marcelovicentegc",
-  ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,
 };

@@ -3,7 +3,7 @@ export type Site = {
   author: string;
   desc: string;
   title: string;
-  ogImage: string;
+  ogImage?: string;
   lightAndDarkMode: boolean;
   postPerPage: number;
 };
@@ -19,24 +19,4 @@ export type SocialIcons = {
   [social in SocialMedia]: string;
 };
 
-export type SocialMedia =
-  | "Github"
-  | "Facebook"
-  | "Instagram"
-  | "LinkedIn"
-  | "Mail"
-  | "Twitter"
-  | "Twitch"
-  | "YouTube"
-  | "WhatsApp"
-  | "Snapchat"
-  | "Pinterest"
-  | "TikTok"
-  | "CodePen"
-  | "Discord"
-  | "GitLab"
-  | "Reddit"
-  | "Skype"
-  | "Steam"
-  | "Telegram"
-  | "Mastodon";
+export type SocialMedia = "Github" | "Instagram" | "LinkedIn" | "Mail";
