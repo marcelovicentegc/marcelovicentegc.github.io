@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "version": "2.3.0",
+  "name": "marcelovicentegc.com",
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro check --watch & astro dev",
     "start": "astro dev",
@@ -12,7 +12,8 @@
     "format": "prettier --plugin-search-dir=. --write .",
     "cz": "cz",
     "prepare": "husky install",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "release": "semantic-release"
   },
   "dependencies": {
     "@astrojs/rss": "^2.4.1",
@@ -44,7 +45,8 @@
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.8",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "semantic-release": "^21.0.7"
   },
   "config": {
     "commitizen": {
