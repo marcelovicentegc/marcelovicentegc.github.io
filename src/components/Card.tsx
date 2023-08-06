@@ -3,16 +3,23 @@ import type { BlogFrontmatter } from "@content/_schemas";
 
 export interface Props {
   href?: string;
+  target?: string;
   frontmatter: BlogFrontmatter;
   secHeading?: boolean;
 }
 
-export default function Card({ href, frontmatter, secHeading = true }: Props) {
+export default function Card({
+  href,
+  target,
+  frontmatter,
+  secHeading = true,
+}: Props) {
   const { title, pubDatetime, description } = frontmatter;
   return (
     <li className="my-6">
       <a
         href={href}
+        target={target}
         className="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
       >
         {secHeading ? (

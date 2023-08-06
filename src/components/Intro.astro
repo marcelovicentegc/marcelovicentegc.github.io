@@ -1,0 +1,46 @@
+---
+import LinkButton from "./LinkButton.astro";
+---
+
+<section id="hero">
+  <h1>Hi, I'm Marcelo! 👋</h1>
+  <p>
+    I'm a versatile{" "}
+    <b>
+      Senior Software Engineer at{" "}
+      <LinkButton href="https://vtex.com" target="_blank">VTEX</LinkButton>
+    </b>
+    , where I play a pivotal role in evolving the{" "}
+    <LinkButton href="https://help.vtex.com/en/v4" target="_blank">
+      VTEX Admin
+    </LinkButton>{" "}
+    platform. Since joining VTEX in late 2020, I've been instrumental in developing
+    innovative features and enhancing user experiences. Before VTEX, I honed my skills
+    building software for various sectors including fintech, edtech, and ecommerce.
+    As a passionate problem-solver, I founded and currently maintain
+    <LinkButton href="https://eutiveumsonho.com" target="_blank">
+      eutiveumsonho
+    </LinkButton>
+    , a unique social network centered around dreams (the ones we have while sleeping).
+    When I'm not delving into code or dreaming up the next big tech solution, you'll
+    find me immersing myself in sports or spending quality time with friends.
+  </p>
+</section>
+
+<style>
+  #hero {
+    @apply pb-6 pt-8;
+  }
+  #hero h1 {
+    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
+  }
+  #hero .rss-link {
+    @apply mb-6;
+  }
+  #hero .rss-icon {
+    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
+  }
+  #hero p {
+    @apply my-2;
+  }
+</style>
