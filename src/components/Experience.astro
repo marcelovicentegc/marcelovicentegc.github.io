@@ -1,100 +1,22 @@
 ---
+import { experiences } from "@content/experience";
 import Card from "./Card";
+import ExperienceHeader from "./ExperienceHeader";
 ---
 
 <section id="experience">
-  <div class="flex justify-between items-center">
-    <h2>Experience</h2>
-    <a
-      href="/cv"
-      download="Marcelo Cardoso - CV.pdf"
-      target="_blank"
-      class="inline-block text-sm font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
-      ><span class="text-sm font-medium decoration-dashed hover:underline"
-        >Download CV</span
-      ></a
-    >
-  </div>
+  <ExperienceHeader client:load />
   <ul>
-    <Card
-      frontmatter={{
-        title: "VTEX | January/2021 - present",
-        tags: [
-          "vtex",
-          "micro-frontend",
-          "frontend-cloud",
-          "observability",
-          "automation",
-          "security",
-        ],
-        description: `Senior Software Engineer
-        <li>I played a significant role in implementing the new Admin version redesign, which substantially enhanced VTEX's product appeal. Its state-of-the-art design greatly eased the selling process for VTEX.</li>
-        <br />
-        <!-- Link to Global Search, Admin GPT, cost reduction. -->
-        <li>I spearheaded numerous product discoveries that led to vital product developments that optimized our system efficiency and user interface.</li>
-        <br />
-        <!-- Link to frontend observability post. -->
-        <li>I was instrumental in creating and maintaining a micro-service to ingest observability data from frontend clients, enabling various teams to have a better understanding of their applications' performance and make data-driven decisions to improve their products.</li>
-        <br />
-        <li>I took measures to bolster system security by instrumenting the Admin services and creating alarms and dashboards. These tools significantly improved our responsiveness and accuracy during system outages, thereby minimizing downtime and maintaining high service quality.</li>
-        <br />
-        <li>I equipped the application with analytics data ingestion which generated valuable insights into product usage for the team.</li>
-        <br />
-        <!-- Write a lot about this topic -->
-        <li>My explorations into micro-frontend architecture and frontend cloud technologies led to the creation of complex MVPs (Minimum Viable Products). These MVPs proved instrumental in guiding key decisions aimed at bolstering system efficiency and improving the developer experience.</li>
-        <br />
-        <!-- CLIs, crontabs, etc. -->
-        <li>I also developed a suite of internal tools designed to automate mundane tasks, thereby boosting efficiency and productivity across various teams. These tools not only streamlined daily operations but also generated valuable insights that were utilized by product managers, designers, and engineers for refining product offerings.</li>
-        `,
-      }}
-      href="https://vtex.com"
-      target="_blank"
-    />
-    <Card
-      frontmatter={{
-        title: "Eu tive um sonho | August/2022 - present",
-        tags: ["entrepeneurship", "creativity", "passion"],
-        description: `Creator
-        <li>As a testament to my passion for creativity and technical experimentation, I founded <a href="https://eutiveumsonho.com?src=marcelovicentegc" target="_blank">Eu tive um sonho (eutiveumsonho.com)</a>, a unique social network with dreams as its core focus. It serves as a playground for me to continually refine my technical skills and explore innovative ideas.</li>
-        <br />
-        <li>Despite not being primarily intended for mass user acquisition, the network has organically grown to over 100+ users, with more than 200+ dreams recorded, demonstrating its appeal and user-friendly design.</li>
-        <br />
-        <li>I've incorporated robust metrics tracking and system health monitoring capabilities to ensure the network's reliability and to glean insights into user behavior and engagement.</li>
-        <br />
-        <li>While this venture started as a fun project, it has become an invaluable tool for self-improvement and learning in my technology career.</li>`,
-      }}
-      href="https://eutiveumsonho.com"
-      target="_blank"
-    />
-    <Card
-      frontmatter={{
-        title: "Cubos | May/2019 - January/2021",
-        tags: ["cubos", "django", "python", "ecommerce"],
-        description: `Software Engineer
-        <li>I spearheaded the implementation of Fitdance's ecommerce frontend, orchestrating a comprehensive transition from the storefront to the backoffice. This strategic migration led to the streamlining of their operations onto a more efficient platform.</li>
-        <br />
-        <li>My contributions were broad and diverse, encompassing feature development for a range of products in sectors including fintech, edtech, and constitutional websites.</li>
-        <br />
-        <li>At Credcesta, even as an intern, I exhibited a high level of commitment and competency. I was involved in frontend and backend development, stakeholder management, and team onboarding, reflecting my multifaceted role within the team.</li>
-        <br />
-        <li>I played a pivotal role in creating Credcesta's portal, enabling customers to create credit cards and manage their accounts seamlessly. This crucial development facilitated the expansion of Credcesta's payroll loans program.</li>
-        <br />
-        <li>My role extended to a migration of their constitutional website to Django. This transition empowered non-technical users to modify the website interface, improving accessibility and usability.</li>
-        <br />
-        <li>As a mentor and educator, I took the initiative to guide and teach team members on how to write unit tests for React, thereby fostering a culture of quality code and enhancing the team's technical prowess.</li>
-        `,
-      }}
-      href="https://cubos.io"
-      target="_blank"
-    />
+    {
+      experiences.map(experience => {
+        return <Card experience={experience} />;
+      })
+    }
   </ul>
 </section>
 
 <style>
   #experience {
     @apply pb-6 pt-12;
-  }
-  #experience h2 {
-    @apply text-2xl font-semibold tracking-wide;
   }
 </style>
