@@ -15,26 +15,26 @@ const styles = StyleSheet.create({
   section: {
     display: "flex",
     flexDirection: "column",
-    margin: 10,
-    padding: 10,
+    margin: 8,
+    padding: 4,
   },
   header: {
-    fontSize: 24,
-    marginBottom: 10,
+    fontSize: 20,
+    marginBottom: 4,
   },
   content: {
-    fontSize: 14,
-  },
-  jobTitle: {
-    fontSize: 20,
-    marginBottom: 5,
+    fontSize: 12,
   },
   jobCompany: {
     fontSize: 16,
-    marginBottom: 5,
+    marginBottom: 4,
+  },
+  jobTitle: {
+    fontSize: 14,
+    marginBottom: 12,
   },
   jobPeriod: {
-    fontSize: 14,
+    fontSize: 12,
     marginBottom: 10,
   },
   jobDescription: {
@@ -42,13 +42,13 @@ const styles = StyleSheet.create({
   },
   tag: {
     fontSize: 12,
-    marginRight: 5,
-    marginBottom: 5,
-    padding: 5,
+    marginRight: 4,
+    marginBottom: 4,
+    padding: 4,
     backgroundColor: "#f0f0f0",
   },
   introText: {
-    fontSize: 14,
+    fontSize: 10,
     lineHeight: 1.5,
   },
 });
@@ -61,12 +61,19 @@ Font.register({
 function JobExperience({ title, company, period, achievements }: Experience) {
   return (
     <View style={styles.section}>
+      <Text style={styles.jobCompany}>
+        {company} | {period}
+      </Text>
       <Text style={styles.jobTitle}>{title}</Text>
-      <Text style={styles.jobCompany}>{company}</Text>
-      <Text style={styles.jobPeriod}>{period}</Text>
-      {achievements.map((achievement: any, index: any) => (
-        <Text key={index} style={styles.jobDescription}>
-          - {achievement}
+      {achievements.map((achievement, index) => (
+        <Text
+          key={index}
+          style={{
+            ...styles.jobDescription,
+            marginBottom: 20,
+          }}
+        >
+          {achievement}
         </Text>
       ))}
     </View>
@@ -98,17 +105,6 @@ function Intro({ name, email, phone, location }: any) {
  * the two components above.
  */
 export default function Curriculum() {
-  // const render = useAsync(async () => {
-  //   if (!value) return null;
-
-  //   const blob = await pdf(value).toBlob();
-  //   const url = URL.createObjectURL(blob);
-
-  //   return url;
-  // }, [value]);
-
-  // useEffect(() => onUrlChange(render.value), [render.value]);
-
   return (
     <Document>
       <Page style={styles.page}>
@@ -120,19 +116,21 @@ export default function Curriculum() {
             phone="+55 71 999977711 (WhatsApp only)"
             location="Barcelona, Spain"
           />
-          <Text style={styles.content}>
-            Hi, I'm Marcelo! I'm a versatile Senior Software Engineer at VTEX ,
-            where I play a pivotal role in evolving the VTEX Admin platform.
-            Since joining VTEX in late 2020, I've been instrumental in
-            developing innovative features and enhancing user experiences.
-            Before VTEX, I honed my skills building software for various sectors
-            including fintech, edtech, and ecommerce. As a passionate
-            problem-solver, I founded and currently maintain eutiveumsonho , a
-            unique social network centered around dreams (the ones we have while
-            sleeping). When I'm not delving into code or dreaming up the next
-            big tech solution, you'll find me immersing myself in sports or
-            spending quality time with friends.
-          </Text>
+          <View style={styles.section}>
+            <Text style={styles.content}>
+              I'm a versatile Senior Software Engineer at VTEX, where I play a
+              pivotal role in evolving the VTEX Admin platform. Since joining
+              VTEX in late 2020, I've been instrumental in developing innovative
+              features and enhancing user experiences. Before VTEX, I honed my
+              skills building software for various sectors including fintech,
+              edtech, and ecommerce. As a passionate problem-solver, I founded
+              and currently maintain eutiveumsonho , a unique social network
+              centered around dreams (the ones we have while sleeping). When I'm
+              not delving into code or dreaming up the next big tech solution,
+              you'll find me immersing myself in sports or spending quality time
+              with friends.
+            </Text>
+          </View>
         </View>
         <View style={styles.section}>
           <Text style={styles.header}>Experience</Text>
@@ -142,7 +140,13 @@ export default function Curriculum() {
         </View>
         <View style={styles.section}>
           <Text style={styles.header}>Skills</Text>
-          <Text style={styles.content}>
+          <View
+            style={{
+              ...styles.section,
+              flexDirection: "row",
+              flexWrap: "wrap",
+            }}
+          >
             <Tags
               labels={[
                 // Languages
@@ -179,8 +183,15 @@ export default function Curriculum() {
                 "CI/CD",
               ]}
             />
-          </Text>
+          </View>
         </View>
+        <Text
+          style={{
+            fontSize: 10,
+          }}
+        >
+          Curriculum generated at {new Date().toISOString()}
+        </Text>
       </Page>
     </Document>
   );
