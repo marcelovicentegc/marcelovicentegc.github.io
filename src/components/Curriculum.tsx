@@ -161,6 +161,7 @@ export default function Curriculum() {
                 "Next.js",
                 "Django",
                 "Cypress",
+                "Langchain",
 
                 // Tools
                 "Docker",
@@ -181,6 +182,7 @@ export default function Curriculum() {
                 "Frontend clouds",
                 "Automated testing",
                 "CI/CD",
+                "LLMs",
               ]}
             />
           </View>
