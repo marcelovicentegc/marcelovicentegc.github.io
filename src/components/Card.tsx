@@ -11,7 +11,7 @@ export interface Props {
 }
 
 export default function Card({
-  href,
+  href = "",
   target,
   frontmatter,
   experience,
