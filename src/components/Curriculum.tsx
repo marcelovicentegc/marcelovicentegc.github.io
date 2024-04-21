@@ -120,17 +120,14 @@ export default function Curriculum() {
           />
           <View style={styles.section}>
             <Text style={styles.content}>
-              I'm a versatile Senior Software Engineer at VTEX, where I play a
-              pivotal role in evolving the VTEX Admin platform. Since joining
-              VTEX in late 2020, I've been instrumental in developing innovative
-              features and enhancing user experiences. Before VTEX, I've built
-              software for various sectors including fintech, edtech, and
-              ecommerce. As a passionate problem-solver, I founded and currently
-              evolve eutiveumsonho, a unique social network centered around
-              dreams (the ones we have while sleeping). When I'm not diving into
-              code or dreaming up the next big tech solution, you'll find me
-              immersing myself in sports or spending quality time with family
-              and friends.
+              I'm an experienced and versatile Software Engineer playing a
+              central role evolving an enterprise ecommerce platform at VTEX. I
+              also founded and currently maintain a unique social network
+              centered around dreams (the ones we have while sleeping),
+              eutiveumsonho. I am used to build end-to-end software, from
+              beautiful frontends to complex backend services and some
+              infrastructure code. When I'm not writing code, you'll find me
+              immersing myself in sports or spending quality time with friends.
             </Text>
           </View>
         </View>
