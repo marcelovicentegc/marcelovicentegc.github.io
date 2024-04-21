@@ -13,7 +13,6 @@ export default function ExperienceHeader() {
   return (
     <div className="flex items-center justify-between">
       <h2 className="text-2xl font-semibold tracking-wide">Experience</h2>
-
       {isClient ? (
         <PDFDownloadLink
           document={<Curriculum />}

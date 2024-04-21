@@ -1,5 +1,4 @@
-import type { Experience } from "@content/experience";
-import Datetime from "./Datetime";
+import type { Experience } from "@assets/experience";
 import type { BlogFrontmatter } from "@content/_schemas";
 import { Fragment } from "react";
 
@@ -19,7 +18,7 @@ export default function Card({
   secHeading = true,
 }: Props) {
   if (frontmatter) {
-    const { title, pubDatetime, description } = frontmatter;
+    const { title, description } = frontmatter;
 
     return (
       <li className="my-6">
@@ -38,7 +37,6 @@ export default function Card({
             </h3>
           )}
         </a>
-        {pubDatetime ? <Datetime datetime={pubDatetime} /> : null}
         <p>{description}</p>
       </li>
     );

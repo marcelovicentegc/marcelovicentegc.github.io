@@ -1,4 +1,5 @@
-import { Experience, experiences } from "@content/experience";
+import { experiences } from "@assets/experience";
+import type { Experience } from "@assets/experience";
 import {
   Page,
   Text,
@@ -134,8 +135,8 @@ export default function Curriculum() {
         </View>
         <View style={styles.section}>
           <Text style={styles.header}>Experience</Text>
-          {experiences.map(experience => {
-            return <JobExperience {...experience} />;
+          {experiences.map((experience, index) => {
+            return <JobExperience {...experience} key={index} />;
           })}
         </View>
         <View style={styles.section}>
