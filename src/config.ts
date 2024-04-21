@@ -29,8 +29,54 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Mail",
-    href: "mailto:marcelovicentegc@pm.com",
+    href: "mailto:marcelovicentegc@gmail.com",
     linkTitle: `Send an email to ${SITE.title}`,
     active: true,
   },
+];
+
+export const INTRO = {
+  name: "Marcelo Cardoso",
+  email: "marcelovicentegc@gmail.com",
+  phone: "+55 71 999977711 (WhatsApp only)",
+  location: "Currently @ Wellington, New Zealand",
+};
+
+export const TAGS = [
+  // Languages
+  "Javascript",
+  "Typescript",
+  "Python",
+  "Golang",
+
+  // Frameworks
+  "React",
+  "Node",
+  "Next.js",
+  "Django",
+  "Cypress",
+  "LangChain",
+  "Gatsy",
+  "Astro",
+
+  // Tools
+  "Docker",
+  "Kubernetes",
+  "AWS",
+  "Prometheus",
+  "Open Telemetry",
+  "Grafana",
+  "PostgreSQL",
+  "MongoDB",
+  "Redis",
+
+  // Concepts and fields of study
+  "Distributed systems",
+  "Micro-services",
+  "Micro-frontends",
+  "Frontend infrastructure",
+  "Automated testing",
+  "Automation in general",
+  "CI/CD",
+  "LLMs",
 ];

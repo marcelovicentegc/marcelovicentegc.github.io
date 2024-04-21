@@ -1,5 +1,6 @@
 import { experiences } from "@assets/experience";
 import type { Experience } from "@assets/experience";
+import { INTRO, TAGS } from "@config";
 import {
   Page,
   Text,
@@ -112,10 +113,10 @@ export default function Curriculum() {
         <View style={styles.section}>
           <Text style={styles.header}>Introduction</Text>
           <Intro
-            name="Marcelo Cardoso"
-            email="marcelovicentegc@gmail.com"
-            phone="+55 71 999977711 (WhatsApp only)"
-            location="Barcelona, Spain"
+            name={INTRO.name}
+            email={INTRO.email}
+            phone={INTRO.phone}
+            location={INTRO.location}
           />
           <View style={styles.section}>
             <Text style={styles.content}>
@@ -148,44 +149,7 @@ export default function Curriculum() {
               flexWrap: "wrap",
             }}
           >
-            <Tags
-              labels={[
-                // Languages
-                "Javascript",
-                "Typescript",
-                "Python",
-                "Golang",
-
-                // Frameworks
-                "React",
-                "Node",
-                "Next.js",
-                "Django",
-                "Cypress",
-                "Langchain",
-
-                // Tools
-                "Docker",
-                "Kubernetes",
-                "AWS",
-                "Prometheus",
-                "Open Telemetry",
-                "Grafana",
-                "PostgreSQL",
-                "MongoDB",
-                "Redis",
-                "Memchached",
-
-                // Concepts and fields of study
-                "Distributed systems",
-                "Micro-services",
-                "Micro-frontends",
-                "Frontend clouds",
-                "Automated testing",
-                "CI/CD",
-                "LLMs",
-              ]}
-            />
+            <Tags labels={TAGS} />
           </View>
         </View>
         <Text
