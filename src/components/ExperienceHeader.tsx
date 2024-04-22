@@ -2,6 +2,7 @@
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import Curriculum from "./Curriculum";
 import { useEffect, useState } from "react";
+import { track } from "@vercel/analytics";
 
 export default function ExperienceHeader() {
   const [isClient, setIsClient] = useState(false);
@@ -16,12 +17,15 @@ export default function ExperienceHeader() {
       {isClient ? (
         <PDFDownloadLink
           document={<Curriculum />}
-          fileName="Marcelo Cardoso - CV.pdf"
+          fileName={`Marcelo_Cardoso_CV_${new Date().toISOString()}.pdf`}
         >
           {() => (
             <button
               id="download-cv"
               className="inline-block text-sm font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+              onClick={() => {
+                track("download-cv");
+              }}
             >
               <span className="text-sm font-medium decoration-dashed hover:underline">
                 Download CV

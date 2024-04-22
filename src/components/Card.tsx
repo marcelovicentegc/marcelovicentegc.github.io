@@ -1,6 +1,7 @@
 import type { Experience } from "@assets/experience";
 import type { BlogFrontmatter } from "@content/_schemas";
 import { Fragment } from "react";
+import { track } from "@vercel/analytics";
 
 export interface Props {
   href?: string;
@@ -51,6 +52,7 @@ export default function Card({
           href={href}
           target={"_blank"}
           className="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+          onClick={() => track("click-experience", { label: company })}
         >
           {secHeading ? (
             <h2 className="text-lg font-medium decoration-dashed hover:underline">
